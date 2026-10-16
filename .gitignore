@@ -8,3 +8,4 @@
 *.key
 *recovery-code*
 *password*
+/design-qa.md
