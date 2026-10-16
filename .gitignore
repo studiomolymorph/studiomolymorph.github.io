@@ -1,0 +1,10 @@
+.env
+.env.*
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*recovery-code*
+*password*
