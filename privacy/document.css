@@ -54,7 +54,7 @@ section[hidden] { display: none; }
 section { scroll-margin-top: 220px; }
 section:lang(en) { line-height: 1.8; }
 p { margin: 0 0 18px; }
-.document-date { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+.document-date { color: var(--muted); font-size: 13px; margin: 0; }
 h2 { margin: 36px 0 12px; font-size: 18px; line-height: 1.7; font-weight: 650; }
 ul { margin: 0 0 18px; padding-left: 1.4em; }
 li { margin: 7px 0; }
@@ -73,6 +73,8 @@ code { font-family: inherit; font-size: inherit; }
 .site-footer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
   gap: 12px 24px;
   margin-top: 56px;
   padding: 22px 0 42px;
@@ -89,33 +91,43 @@ noscript p { font-size: 14px; }
   .document-heading { gap: 14px; margin-bottom: 20px; }
   h1 { flex-basis: 100%; font-size: 24px; }
   .languages { font-size: 14px; }
-  .document-date { margin-bottom: 24px; font-size: 13px; }
   h2 { font-size: 17px; margin-top: 32px; }
   .site-footer { margin-top: 42px; padding-bottom: 28px; }
 }
 
 /* Policy language first paint */
-[data-policy-title] { display: none; }
-[data-policy-title="en"] { display: inline; }
+[data-policy-title], [data-policy-date] { display: none; }
+[data-policy-title="en"], [data-policy-date="en"] { display: inline; }
 html[data-policy-current] section[data-policy-language],
-html[data-policy-current] [data-policy-title] { display: none; }
+html[data-policy-current] [data-policy-title],
+html[data-policy-current] [data-policy-date] { display: none; }
 html[data-policy-current="en"] section[data-policy-language="en"] { display: block; }
-html[data-policy-current="en"] [data-policy-title="en"] { display: inline; }
+html[data-policy-current="en"] [data-policy-title="en"],
+html[data-policy-current="en"] [data-policy-date="en"] { display: inline; }
 html[data-policy-current="ja"] section[data-policy-language="ja"] { display: block; }
-html[data-policy-current="ja"] [data-policy-title="ja"] { display: inline; }
+html[data-policy-current="ja"] [data-policy-title="ja"],
+html[data-policy-current="ja"] [data-policy-date="ja"] { display: inline; }
 html[data-policy-current="zh-CN"] section[data-policy-language="zh-CN"] { display: block; }
-html[data-policy-current="zh-CN"] [data-policy-title="zh-CN"] { display: inline; }
+html[data-policy-current="zh-CN"] [data-policy-title="zh-CN"],
+html[data-policy-current="zh-CN"] [data-policy-date="zh-CN"] { display: inline; }
 html[data-policy-current="zh-TW"] section[data-policy-language="zh-TW"] { display: block; }
-html[data-policy-current="zh-TW"] [data-policy-title="zh-TW"] { display: inline; }
+html[data-policy-current="zh-TW"] [data-policy-title="zh-TW"],
+html[data-policy-current="zh-TW"] [data-policy-date="zh-TW"] { display: inline; }
 html[data-policy-current="ko-KR"] section[data-policy-language="ko-KR"] { display: block; }
-html[data-policy-current="ko-KR"] [data-policy-title="ko-KR"] { display: inline; }
+html[data-policy-current="ko-KR"] [data-policy-title="ko-KR"],
+html[data-policy-current="ko-KR"] [data-policy-date="ko-KR"] { display: inline; }
 html[data-policy-current="es-ES"] section[data-policy-language="es-ES"] { display: block; }
-html[data-policy-current="es-ES"] [data-policy-title="es-ES"] { display: inline; }
+html[data-policy-current="es-ES"] [data-policy-title="es-ES"],
+html[data-policy-current="es-ES"] [data-policy-date="es-ES"] { display: inline; }
 html[data-policy-current="pt-BR"] section[data-policy-language="pt-BR"] { display: block; }
-html[data-policy-current="pt-BR"] [data-policy-title="pt-BR"] { display: inline; }
+html[data-policy-current="pt-BR"] [data-policy-title="pt-BR"],
+html[data-policy-current="pt-BR"] [data-policy-date="pt-BR"] { display: inline; }
 html[data-policy-current="fr-FR"] section[data-policy-language="fr-FR"] { display: block; }
-html[data-policy-current="fr-FR"] [data-policy-title="fr-FR"] { display: inline; }
+html[data-policy-current="fr-FR"] [data-policy-title="fr-FR"],
+html[data-policy-current="fr-FR"] [data-policy-date="fr-FR"] { display: inline; }
 html[data-policy-current="de-DE"] section[data-policy-language="de-DE"] { display: block; }
-html[data-policy-current="de-DE"] [data-policy-title="de-DE"] { display: inline; }
+html[data-policy-current="de-DE"] [data-policy-title="de-DE"],
+html[data-policy-current="de-DE"] [data-policy-date="de-DE"] { display: inline; }
 html[data-policy-current="it-IT"] section[data-policy-language="it-IT"] { display: block; }
-html[data-policy-current="it-IT"] [data-policy-title="it-IT"] { display: inline; }
+html[data-policy-current="it-IT"] [data-policy-title="it-IT"],
+html[data-policy-current="it-IT"] [data-policy-date="it-IT"] { display: inline; }
