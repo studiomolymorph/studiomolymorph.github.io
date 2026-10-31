@@ -1,105 +1,693 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="くるりんイライラ棒 / Buzz Wire: Spin Challenge のプライバシーポリシー。日本語・English。">
-  <title>プライバシーポリシー / Privacy Policy — Molymorph</title>
-  <link rel="stylesheet" href="/privacy/document.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Privacy Policy for the Molymorph game, available in 10 languages.">
+<title>Privacy Policy — Molymorph</title>
+<script>(() => {
+const copy = {"en":{"title":"Privacy Policy","language":"Language"},"ja":{"title":"プライバシーポリシー","language":"表示言語"},"zh-CN":{"title":"隐私政策","language":"语言"},"zh-TW":{"title":"隱私權政策","language":"顯示語言"},"ko-KR":{"title":"개인정보 처리방침","language":"언어"},"es-ES":{"title":"Política de privacidad","language":"Idioma"},"pt-BR":{"title":"Política de Privacidade","language":"Idioma"},"fr-FR":{"title":"Politique de confidentialité","language":"Langue"},"de-DE":{"title":"Datenschutzerklärung","language":"Sprache"},"it-IT":{"title":"Informativa sulla privacy","language":"Lingua"}};
+const aliases = {"en-us":"en","ja-jp":"ja","zh-hans":"zh-CN","zh-hant":"zh-TW","ko":"ko-KR","es":"es-ES","pt":"pt-BR","fr":"fr-FR","de":"de-DE","it":"it-IT"};
+const languageFromUrl = () => {
+  const requested = location.hash.slice(1).toLowerCase();
+  return Object.keys(copy).find(key => key.toLowerCase() === requested) || aliases[requested] || "en";
+};
+
+const language = languageFromUrl();
+document.documentElement.lang = language;
+document.documentElement.dataset.policyCurrent = language;
+document.title = `${copy[language].title} — Molymorph`;
+})();</script>
+<link rel="stylesheet" href="/privacy/document.css?v=20261031-r04">
 </head>
 <body>
 <header class="site-header"><span class="brand">Molymorph</span></header>
 <main>
-  <div class="document-heading">
-    <h1 id="policy-title">プライバシーポリシー</h1>
-    <nav class="languages" aria-label="表示言語"><a href="#ja" lang="ja" data-language="ja">日本語</a><a href="#en" lang="en" data-language="en">English</a></nav>
-  </div>
-  <noscript><p>JavaScriptが無効な場合は、日英両方の本文を表示します。<a href="#en" lang="en">Read in English</a></p></noscript>
-  <section id="ja" lang="ja" data-policy-language="ja" aria-labelledby="policy-title">
-    <p class="document-date">制定・最終更新日：2026年10月16日</p>
-    <p>Molymorph（以下「当方」）は、Androidアプリ「くるりんイライラ棒」（英語名：Buzz Wire: Spin Challenge、以下「本アプリ」）および本サポートサイトにおける情報の取扱いを、以下のとおり説明します。各言語で表示される同一アプリにも適用します。</p>
-    <h2>1. ゲームの記録と端末内の保存</h2>
-    <p>本アプリは、進行、解放状態、獲得した鍵、クリアタイム、広告によるLIFE追加の記録、表示言語、音声設定、案内の表示記録などを端末内に保存します。本アプリ独自のユーザーアカウントや、進行を当方のサーバーへ送信して同期する機能はありません。</p>
-    <p>Androidの設定・OS・端末に応じて、一部の保存データがAndroid標準のクラウドバックアップや端末間移行の対象になります。これはAndroidの仕組みによるもので、当方がそのバックアップへアクセスする機能はありません。バックアップの扱いは、利用するGoogleサービスや端末の設定にも依存します。</p>
-    <h2>2. 広告配信に伴う情報の取扱い</h2>
-    <p>本アプリはGoogle AdMob（Google Mobile Ads SDK）を使用し、リワード広告とインタースティシャル広告を表示します。Googleおよび広告配信に関わる事業者は、SDK、端末設定、地域、同意の選択などに応じて、次の情報を取得・送信・利用することがあります。</p>
-    <ul>
-      <li>IPアドレス、およびIPアドレスから推定されるおおよその地域</li>
-      <li>広告ID、アプリセットIDなどの端末・アプリに関する識別子</li>
-      <li>アプリ起動、広告表示・タップ・動画視聴などの利用情報</li>
-      <li>クラッシュ情報、診断情報、処理性能などの技術情報</li>
-    </ul>
-    <p>これらは広告の配信・パーソナライズ、広告効果の測定・分析、サービスの運用、不正行為の検知・防止などに使われます。Google Mobile Ads SDKによるデータの送信はTLSで暗号化されます。外部サービス側の取扱いと保存期間は、それぞれのポリシーによります。</p>
-    <p><a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a> ／ <a href="https://policies.google.com/technologies/partner-sites?hl=ja">Googleのサービスを使用するサイトやアプリから収集した情報の利用</a> ／ <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=ja">Google Mobile Ads SDKのデータに関する説明</a></p>
-    <h2>3. 広告の同意と選択</h2>
-    <p>地域などに応じて必要となる広告の同意確認には、GoogleのUser Messaging Platform（UMP）を使用します。「広告プライバシー設定」がアプリ内に表示される場合、その画面から広告に関する選択を変更できます。Android側の広告設定でも、利用可能な範囲で広告IDのリセット・削除などを行えます。変更は、過去の処理を自動的に取り消すものではありません。</p>
-    <p><a href="https://policies.google.com/technologies/ads?hl=ja">Googleの広告とプライバシーに関する説明</a></p>
-    <h2>4. お問い合わせで受け取る情報</h2>
-    <p>メールでお問い合わせいただいた場合、メールアドレス、記載されたお名前、問い合わせ内容、任意で提供された端末情報や画像などを受け取ります。対応、原因調査、必要な連絡のために利用し、対応の継続や法令上の義務に必要な範囲・期間で保管します。不要となった情報は削除します。</p>
-    <h2>5. 外部サービス・国外での処理</h2>
-    <p>広告、バックアップ、メールなどの外部サービスを通じて、その提供者に情報が送信されることがあります。処理先には、お住まいの国・地域以外のサーバーが含まれる場合があります。各サービスのデータ保護や国外移転の仕組みについては、提供者のプライバシーポリシーもご確認ください。</p>
-    <h2>6. 保存期間・削除・お問い合わせへの対応</h2>
-    <p>ゲームの保存記録は、データの初期化・削除などを行うまで端末内に残ります。Androidの「設定 → アプリ → 本アプリ → ストレージ」から「ストレージを消去」または「データを消去」を行うと、端末内の記録を初期化できます。表示名や手順は端末により異なります。キャッシュ削除だけでは記録は消えません。</p>
-    <p>端末内データの消去とクラウドバックアップの削除は別です。アンインストール後の再インストールなどで、Androidのバックアップから記録が復元される場合があります。バックアップはAndroidやGoogleアカウント側の設定で管理してください。Googleなどが保有する広告関連データの保存・削除は、その提供者の案内に従ってください。</p>
-    <p>適用される法令に基づく情報の確認、訂正、削除、処理への異議や同意の撤回などについては、末尾のお問い合わせ先へご連絡ください。当方が取り扱う情報について、法令と保有状況に応じて対応します。内容に応じて本人確認や外部サービスへのご案内を行う場合があります。</p>
-    <h2>7. 安全管理</h2>
-    <p>当方は、取り扱う情報へのアクセスを必要な範囲に制限するなど、情報の保護に努めます。本サイトはHTTPSで提供します。端末・アカウントの安全性や通信環境による影響を完全に防げることを保証するものではありません。</p>
-    <h2>8. お子様の情報</h2>
-    <p>本アプリは、子どもを主な対象として設計したサービスではありません。お子様の情報の取扱いについて懸念がある場合はお問い合わせください。法令上必要な同意を得ずにお子様の情報を取り扱ったことが判明した場合、確認のうえ必要な対応を行います。</p>
-    <h2>9. 本サポートサイト</h2>
-    <p>本サイトはGitHub Pagesで公開しています。GitHubはサイトの安全確保などのため、閲覧者のIPアドレスなどを記録する場合があります。当方は、本サイトに独自のアクセス解析ツールや広告タグを設置していません。</p>
-    <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する説明</a></p>
-    <h2>10. ポリシーの変更</h2>
-    <p>アプリの機能や法令などの変更に応じて、本ポリシーを更新することがあります。変更後の内容と更新日は本ページに掲載し、法令上必要な場合には追加の通知や同意確認を行います。</p>
-    <div class="policy-contact" id="ja-contact">
-      <h2>運営者・お問い合わせ</h2>
-      <address>運営者：Molymorph<br>お問い合わせ：<a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></address>
-    </div>
-  </section>
-  <hr class="section-divider">
-  <section id="en" lang="en" data-policy-language="en" aria-labelledby="policy-title">
-    <p class="document-date">Effective and last updated: October 16, 2026</p>
-    <p>This policy explains how Molymorph ("we") handles information in the Android game Buzz Wire: Spin Challenge (Japanese title: くるりんイライラ棒, the "App") and this support website. It also applies to the same App under its other localized titles.</p>
-    <h2>1. Game records and local storage</h2>
-    <p>The App saves progress, unlocks, keys, completion times, ad-related LIFE rewards, language and sound settings, and guidance records on your device. It does not provide its own user accounts or send game progress to our own server for synchronization.</p>
-    <p>Depending on your Android settings, OS and device, some saved records may be included in Android's standard cloud backup or device transfer. We do not have a feature that accesses those backups. Their handling also depends on the Google services and device settings you use.</p>
-    <h2>2. Advertising information</h2>
-    <p>The App uses Google AdMob (Google Mobile Ads SDK) for rewarded and interstitial ads. Depending on the SDK, device settings, region and consent choices, Google and advertising providers may collect, transmit and use:</p>
-    <ul>
-      <li>IP addresses and approximate location inferred from them;</li>
-      <li>Device or app identifiers, such as the advertising ID and app set ID;</li>
-      <li>App launches and interactions with ads, including views, taps and video viewing;</li>
-      <li>Crash, diagnostic and performance information.</li>
-    </ul>
-    <p>These may be used for ad delivery and personalization, measurement and analytics, service operation, and fraud detection and prevention. Google Mobile Ads SDK data is encrypted in transit using TLS. External providers' handling and retention are governed by their respective policies.</p>
-    <p><a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites?hl=en">How Google uses information from apps and sites</a> · <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=en">Google Mobile Ads SDK data disclosure</a></p>
-    <h2>3. Advertising consent and choices</h2>
-    <p>We use Google's User Messaging Platform (UMP) for advertising consent where required. When an advertising privacy options control is shown in the App, you can use it to change your choices. Android's advertising settings may also let you reset or delete the advertising ID. Changes do not automatically reverse previous processing.</p>
-    <p><a href="https://policies.google.com/technologies/ads?hl=en">Google advertising and privacy information</a></p>
-    <h2>4. Support inquiries</h2>
-    <p>If you contact us by email, we receive your email address, any name you provide, your message, and any device details or images you choose to send. We use these to respond, investigate and communicate as needed. We retain them for the period necessary to continue handling the matter or meet legal obligations, and delete information that is no longer needed.</p>
-    <h2>5. External services and international processing</h2>
-    <p>Advertising, backup and email services may transmit information to their providers, including servers outside your country or region. Please also consult each provider's privacy policy for its data protection and international transfer arrangements.</p>
-    <h2>6. Retention, deletion and requests</h2>
-    <p>Saved game records remain on your device until you reset or remove the data. You can reset local records through Android Settings → Apps → this App → Storage → Clear storage or Clear data. Labels vary by device. Clearing only the cache does not delete saved progress.</p>
-    <p>Deleting local data does not delete cloud backups. Android may restore records after reinstallation. Manage backups through your Android or Google account settings. For advertising information held by Google or other providers, follow their data management and deletion instructions.</p>
-    <p>For access, correction, deletion, objection, withdrawal of consent or other requests under applicable law, use the contact details at the end of this policy. We respond according to applicable law and the information we handle. We may need to verify your identity or direct you to the relevant external provider.</p>
-    <h2>7. Security</h2>
-    <p>We take steps to protect information, including restricting access to what is necessary. This website is served over HTTPS. We cannot guarantee complete protection against issues affecting your device, accounts or network environment.</p>
-    <h2>8. Children's information</h2>
-    <p>The App is not designed primarily for children. Please contact us if you have concerns about a child's information. If we learn that a child's information has been handled without consent required by law, we will investigate and take appropriate action.</p>
-    <h2>9. This support website</h2>
-    <p>This website is hosted on GitHub Pages. GitHub may record visitor IP addresses and related information for security purposes. We have not added our own analytics tools or advertising tags to this website.</p>
-    <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a></p>
-    <h2>10. Changes</h2>
-    <p>We may update this policy when the App or legal requirements change. The revised policy and update date will appear on this page. We will provide additional notice or obtain consent where required by law.</p>
-    <div class="policy-contact" id="en-contact">
-      <h2>Operator and contact</h2>
-      <address>Operator: Molymorph<br>Email: <a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></address>
-    </div>
-  </section>
+<div class="document-heading"><h1 id="policy-title"><span data-policy-title="en">Privacy Policy</span><span data-policy-title="ja">プライバシーポリシー</span><span data-policy-title="zh-CN">隐私政策</span><span data-policy-title="zh-TW">隱私權政策</span><span data-policy-title="ko-KR">개인정보 처리방침</span><span data-policy-title="es-ES">Política de privacidad</span><span data-policy-title="pt-BR">Política de Privacidade</span><span data-policy-title="fr-FR">Politique de confidentialité</span><span data-policy-title="de-DE">Datenschutzerklärung</span><span data-policy-title="it-IT">Informativa sulla privacy</span></h1>
+<nav class="languages" aria-label="Language"><a href="#en" lang="en" data-language="en" aria-current="true">English</a><a href="#ja" lang="ja" data-language="ja">日本語</a><a href="#zh-CN" lang="zh-CN" data-language="zh-CN">简体中文</a><a href="#zh-TW" lang="zh-TW" data-language="zh-TW">繁體中文</a><a href="#ko-KR" lang="ko-KR" data-language="ko-KR">한국어</a><a href="#es-ES" lang="es-ES" data-language="es-ES">Español</a><a href="#pt-BR" lang="pt-BR" data-language="pt-BR">Português (Brasil)</a><a href="#fr-FR" lang="fr-FR" data-language="fr-FR">Français</a><a href="#de-DE" lang="de-DE" data-language="de-DE">Deutsch</a><a href="#it-IT" lang="it-IT" data-language="it-IT">Italiano</a></nav></div>
+<noscript><p>JavaScript is disabled. All language versions are shown below.</p></noscript>
+<section id="en" lang="en" data-policy-language="en" aria-labelledby="policy-title">
+<p class="document-date">Effective date: October 16, 2026 / Last updated: October 31, 2026</p>
+<p>Molymorph (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) explains below how information is handled in the Android app &quot;くるりんイライラ棒&quot; (English title: Buzz Wire: Spin Challenge; the &quot;App&quot;) and on the website hosting this Policy. This Policy also applies to other language versions of the same App.</p>
+<h2>1. Game Records and On-Device Storage</h2>
+<p>The App stores information on your device, including progress, unlock status, keys earned, completion times, records of LIFE added through ads, display language, audio settings, and records relating to guidance and review requests. The App has no user account system of its own and no feature that sends progress to our servers for synchronization.</p>
+<p>Depending on your Android settings, operating system, and device, some saved data may be included in Android&#x27;s standard backup or device-to-device transfer. We have no feature that allows us to access those backups. For deletion and restoration, see &quot;6. Deleting Saved Records and Backups&quot;.</p>
+<h2>2. Information Handled in Connection with Advertising</h2>
+<p>The App uses Google AdMob&#x27;s ad-serving software (Google Mobile Ads SDK) to display rewarded ads for watching videos and ads when switching screens. Depending on the SDK, device settings, region, your choices, and other factors, Google and businesses involved in ad delivery may collect, transmit, and use the following information.</p>
+<ul>
+<li>IP address and approximate location inferred from the IP address</li>
+<li>Advertising ID, App Set ID, temporary identifiers generated within the ad-serving software, and similar identifiers</li>
+<li>Usage information, such as app launches, ad impressions, taps, and video views</li>
+<li>Technical information about failures, diagnostics, and performance (such as app, SDK, and OS versions, device model, connectivity status, and error information)</li>
+</ul>
+<p>This information is used for purposes such as ad delivery and personalization within the scope permitted for each identifier, measuring and analyzing ad effectiveness, maintaining services, and detecting and preventing fraud. App Set ID is not used for ad personalization or ad effectiveness measurement, and is not linked to identifiers such as the Advertising ID or to personal information for advertising purposes.</p>
+<p>Data transmitted by the Google Mobile Ads SDK is encrypted (TLS). Please also consult each provider&#x27;s explanations about how external services handle information and how long they retain it.</p>
+<p>Ad personalization depends on Google and device settings, your choices, and applicable requirements. Even non-personalized ads may involve the handling of information for purposes such as frequency management, aggregation, and fraud prevention.</p>
+<p><a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> / <a href="https://policies.google.com/technologies/partner-sites?hl=en">How Google uses information from sites or apps that use its services</a> / <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=en">Google Mobile Ads SDK data disclosure</a></p>
+<h2>3. Ad Privacy Settings</h2>
+<p>If ad privacy settings appear in the App&#x27;s settings screen, you can change your choices there. When consent needs to be requested, we use Google&#x27;s User Messaging Platform (UMP).</p>
+<p>You can also reset or delete your Advertising ID through Android&#x27;s ad settings, where these options are available. This action is separate from deleting information that has already been processed. Please consult Google&#x27;s explanations about its use of data and the controls available to you.</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=en">Google&#x27;s explanation of advertising and privacy</a></p>
+<h2>4. Information Received Through Inquiries</h2>
+<p>If you contact us by email, we receive your email address, any name you provide, the contents of your inquiry, and any device information, images, or other information you voluntarily provide. We use this information to respond, investigate causes, and communicate with you as necessary.</p>
+<p>When we finish handling an inquiry, we delete inquiry emails, attachments, and copies under our control that are no longer needed. We retain minimal records needed to explain our response to the exercise of rights, and information needed for specific legal obligations or the protection of rights, to the extent necessary for those purposes.</p>
+<h2>5. External Services and Processing Outside Your Country</h2>
+<p>The App and related websites use Google AdMob and UMP for advertising and consent requests, Google Play for distribution, reviews, and related functions, OS backups, Gmail for receiving and responding to inquiries, and GitHub Pages for hosting this Policy. Each provider handles information depending on the functions you use.</p>
+<p>We control the integration and configuration of advertising features in the App, as well as the purposes of use, retention, deletion, and other handling of inquiry information we receive. Each provider&#x27;s explanations also apply to processing for which Google or other providers independently determine the purposes and methods. We accept inquiries through our contact point about handling that we determine.</p>
+<p>We receive inquiries in Japan. Services such as Google and GitHub may also handle information outside your country or region of residence. For information about use, sharing, and retention by Google&#x27;s services, please consult Google&#x27;s explanations about information use and retention. Management of Android backups also depends on the services you use and your device settings.</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=en">Google&#x27;s explanation of information use</a> / <a href="https://policies.google.com/technologies/retention?hl=en">Google&#x27;s explanation of data retention</a> / <a href="https://support.google.com/android/answer/2819582?hl=en">Android backup information</a></p>
+<h2>6. Deleting Saved Records and Backups</h2>
+<p>Saved game records remain on your device until you reset or delete the data or take similar action. You can reset on-device records through Android&#x27;s &quot;Settings → Apps → the App → Storage&quot; by selecting &quot;Clear storage&quot; or &quot;Clear data&quot;. Labels and steps vary by device. Clearing the cache alone does not delete the records.</p>
+<p>Clearing on-device data is separate from deleting cloud backups. Records may be restored from an Android backup, for example when you reinstall the App after uninstalling it. Manage backups through Android or your Google Account settings.</p>
+<p>Retention periods for advertising-related information independently handled by Google or other providers, and for Android backups, are governed by the respective services&#x27; terms and policies and your settings.</p>
+<h2>7. Inquiries About Personal Information</h2>
+<p>Depending on applicable law and the conditions of processing, you may request actions such as confirmation of processing, access, correction, deletion, objection to processing, or withdrawal of consent. Please tell our <a href="mailto:studio.molymorph+privacy@gmail.com">privacy contact</a> what action you are requesting and which information it concerns.</p>
+<p>We respond to requests that we are legally required to address after checking their scope and contents and how we handle the information concerned.</p>
+<p>Depending on the request, we may verify your identity using the minimum information necessary. You do not need to send an identity document or all of your on-device game records at the outset.</p>
+<p>We have no mechanism for remotely viewing or deleting game records stored only on your device. For instructions on deleting on-device records, see &quot;6. Deleting Saved Records and Backups&quot;. For information handled by external services, we check the extent to which we can respond and, where necessary, also direct you to the relevant provider&#x27;s contact point.</p>
+<h2>8. Rights of Users in Brazil (LGPD)</h2>
+<p>To the extent provided under the LGPD, you may request the following actions.</p>
+<ul>
+<li>Confirmation of processing, access to information, and correction</li>
+<li>Anonymization, blocking, or deletion of information that is unnecessary, excessive, or processed in violation of the law</li>
+<li>Data portability and information about recipients with whom data is shared</li>
+<li>For processing based on consent, an explanation of the consequences of not consenting, withdrawal of consent, and deletion subject to legal exceptions</li>
+<li>Objection to processing that violates the law</li>
+<li>Review of decisions based solely on automated processing of personal data that affect your interests</li>
+</ul>
+<p>You may also lodge a complaint with <a href="https://www.gov.br/anpd/pt-br">Brazil&#x27;s data protection authority, ANPD</a>.</p>
+<p>Requests are accepted free of charge through our <a href="mailto:studio.molymorph+privacy@gmail.com">privacy contact</a>. We respond within the deadlines established by applicable laws and other applicable requirements. If we cannot immediately take the action you request, we explain the reasons and the available options.</p>
+<h2>9. Security Measures</h2>
+<p>We endeavor to protect information, including by limiting access to the information we handle to what is necessary. This website is provided over HTTPS. Even with these measures, it may not be possible to fully prevent effects arising from the security of devices and accounts or from communication conditions.</p>
+<h2>10. Intended Age Group</h2>
+<p>The App is intended for people aged 18 and over. Please contact us if you have concerns about the handling of information concerning children or minors. If a problem is confirmed, we take the necessary action appropriate to the circumstances.</p>
+<h2>11. Website Hosting This Policy</h2>
+<p>This website is hosted on GitHub Pages. GitHub records and retains visitors&#x27; IP addresses for purposes such as keeping the website secure. We do not install our own analytics tools or advertising tags on this website.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub&#x27;s privacy statement</a></p>
+<h2>12. Changes to This Policy</h2>
+<p>We may update this Policy in response to changes in the App&#x27;s features, laws, or other circumstances. We publish the revised content and update date on this page and provide additional notice or request consent where required by law.</p>
+<div class="policy-contact" id="en-contact">
+<h2>Operator and Contact</h2>
+<p>Operator: Molymorph (individually operated in Japan)</p>
+<p>Contact: <a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
+<section id="ja" lang="ja" data-policy-language="ja" aria-labelledby="policy-title">
+<p class="document-date">制定日：2026年10月16日／最終更新日：2026年10月31日</p>
+<p>Molymorph（以下「当方」）は、Androidアプリ「くるりんイライラ棒」（英語名：Buzz Wire: Spin Challenge、以下「本アプリ」）および本ポリシー掲載サイトにおける情報の取扱いを、以下のとおり説明します。同じアプリの他言語版にも適用します。</p>
+<h2>1. ゲームの記録と端末内の保存</h2>
+<p>本アプリは、進行、解放状態、獲得した鍵、クリアタイム、広告によるLIFE追加の記録、表示言語、音声設定、案内やレビュー依頼に関する記録などを端末内に保存します。本アプリ独自のユーザーアカウントや、進行を当方のサーバーへ送信して同期する機能はありません。</p>
+<p>Androidの設定・OS・端末に応じて、一部の保存データがAndroid標準バックアップや端末間移行の対象になります。当方がそのバックアップへアクセスする機能はありません。削除や復元については「6. 保存記録の削除とバックアップ」をご確認ください。</p>
+<h2>2. 広告配信に伴う情報の取扱い</h2>
+<p>本アプリはGoogle AdMobの広告配信用ソフトウェア（Google Mobile Ads SDK）を使用し、動画視聴による報酬付き広告と画面切り替え時の広告を表示します。Googleおよび広告配信に関わる事業者は、SDK、端末設定、地域、利用者の選択などに応じて、次の情報を取得・送信・利用することがあります。</p>
+<ul>
+<li>IPアドレス、およびIPアドレスから推定されるおおよその地域</li>
+<li>広告ID、アプリセットID、広告配信用ソフトウェア内で生成する一時的な識別子など</li>
+<li>アプリ起動、広告表示・タップ・動画視聴などの利用情報</li>
+<li>障害、診断、処理性能などの技術情報（アプリ・SDK・OSの版、機種、通信状態、エラー情報など）</li>
+</ul>
+<p>これらは、識別子ごとに認められた範囲での広告配信・パーソナライズ、広告効果の測定・分析、サービスの維持、不正行為の検知・防止などに使われます。アプリセットIDは広告のパーソナライズや広告効果測定には使用せず、広告目的で広告ID等の識別子や個人情報と関連付けません。</p>
+<p>Google Mobile Ads SDKによるデータの送信は暗号化されます（TLS）。外部サービス側の取扱いと保存期間については、各提供者の説明もご確認ください。</p>
+<p>広告のパーソナライズには、Googleや端末の設定、利用者の選択、適用される要件が関係します。非パーソナライズ広告でも、表示回数の管理、集計、不正防止などのために情報が取り扱われることがあります。</p>
+<p><a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a> ／ <a href="https://policies.google.com/technologies/partner-sites?hl=ja">Googleのサービスを使用するサイトやアプリから収集した情報の利用</a> ／ <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=ja">Google Mobile Ads SDKのデータに関する説明</a></p>
+<h2>3. 広告のプライバシー設定</h2>
+<p>アプリの設定画面に広告のプライバシー設定が表示される場合は、そこから選択内容を変更できます。同意確認が必要な場合は、Googleの仕組み（User Messaging Platform、UMP）を使用します。</p>
+<p>Androidの広告設定でも、利用可能な範囲で広告IDのリセット・削除などを行えます。この操作は、すでに処理された情報の削除とは別のものです。Googleによるデータ利用と利用可能な管理方法については、Googleの説明をご確認ください。</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=ja">Googleの広告とプライバシーに関する説明</a></p>
+<h2>4. お問い合わせで受け取る情報</h2>
+<p>メールでお問い合わせいただいた場合、メールアドレス、記載されたお名前、問い合わせ内容、任意で提供された端末情報や画像などを受け取ります。対応、原因調査、必要な連絡のために利用します。</p>
+<p>当方が管理する問い合わせメール・添付・複製について、対応終了時に不要となったものを削除します。権利行使への対応を説明するための最小限の記録や、具体的な法的義務・権利保護のために必要な情報は、その目的に必要な範囲で保持します。</p>
+<h2>5. 外部サービス・国外での取扱い</h2>
+<p>本アプリと関連サイトでは、広告・同意確認のためにGoogle AdMob・UMP、配布・レビュー等のためにGoogle Play、OSのバックアップ、問い合わせの受信・対応のためにGmail、ポリシーの掲載のためにGitHub Pagesを利用します。利用する機能に応じて、それぞれの提供者が情報を取り扱います。</p>
+<p>当方は、本アプリへの広告機能の組み込み・設定や、当方が受け取る問い合わせ情報の利用目的・保存・削除等を管理します。Google等が独自に利用目的・方法を決めて行う処理には、各提供者の説明も適用されます。当方が決定する取扱いについては、当方の窓口でお問い合わせを受け付けます。</p>
+<p>当方は日本で問い合わせを受け取ります。GoogleやGitHub等のサービスでも、お住まいの国・地域以外で情報が取り扱われることがあります。Googleのサービスにおける利用・共有・保存については、Googleの情報利用と保持の説明をご確認ください。Androidバックアップの管理は、利用しているサービスや端末の設定にも依存します。</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=ja">Googleによる情報利用の説明</a> ／ <a href="https://policies.google.com/technologies/retention?hl=ja">Googleのデータ保持の説明</a> ／ <a href="https://support.google.com/android/answer/2819582?hl=ja">Androidバックアップの説明</a></p>
+<h2>6. 保存記録の削除とバックアップ</h2>
+<p>ゲームの保存記録は、データの初期化・削除などを行うまで端末内に残ります。Androidの「設定 → アプリ → 本アプリ → ストレージ」から「ストレージを消去」または「データを消去」を行うと、端末内の記録を初期化できます。表示名や手順は端末により異なります。キャッシュ削除だけでは記録は消えません。</p>
+<p>端末内データの消去とクラウドバックアップの削除は別です。アンインストール後の再インストールなどで、Androidのバックアップから記録が復元される場合があります。バックアップはAndroidやGoogleアカウント側の設定で管理してください。</p>
+<p>Google等が独自に取り扱う広告関連情報やAndroidバックアップの保存期間は、それぞれのサービスの規約・ポリシーと利用者の設定に従います。</p>
+<h2>7. 個人情報に関するお問い合わせ</h2>
+<p>適用される法令と処理の条件に応じて、情報の確認、アクセス、訂正、削除、処理への異議や同意の撤回などを求めることができます。<a href="mailto:studio.molymorph+privacy@gmail.com">プライバシー窓口</a>へ、希望する対応と対象となる情報をお知らせください。</p>
+<p>法令上必要な求めには、その対象と内容、当方による情報の取扱いを確認したうえで対応します。</p>
+<p>内容に応じて、必要な最小限の情報で本人確認を行う場合があります。最初から身分証明書や端末内のゲーム記録全体を送る必要はありません。</p>
+<p>当方は端末内にのみ保存されたゲーム記録を遠隔で閲覧・削除する仕組みを備えていません。端末内の記録の消去方法は「6. 保存記録の削除とバックアップ」をご確認ください。外部サービスが取り扱う情報については、当方が対応できる範囲を確認し、必要に応じて該当する提供者の窓口も案内します。</p>
+<h2>8. ブラジルの利用者の権利（LGPD）</h2>
+<p>LGPDで認められる範囲で、次の対応を求めることができます。</p>
+<ul>
+<li>取扱いの有無の確認、情報へのアクセス、訂正</li>
+<li>不要・過剰または法令に反して取り扱われた情報の匿名化・利用停止・削除</li>
+<li>データの移行、提供先に関する説明</li>
+<li>同意に基づく取扱いについて、同意しない場合の影響の説明、同意の撤回、法令上の例外を除く削除</li>
+<li>法令に反する取扱いへの異議</li>
+<li>個人データの自動処理のみに基づき行われ、利用者の利益に影響する決定の見直し</li>
+</ul>
+<p><a href="https://www.gov.br/anpd/pt-br">ブラジルのデータ保護機関ANPD</a>に申し立てることもできます。</p>
+<p>ご依頼は<a href="mailto:studio.molymorph+privacy@gmail.com">プライバシー窓口</a>で無料で受け付けます。適用される法令等に従い、定められた期限内に対応します。直ちに希望の措置を取れない場合は、その理由と可能な対応を説明します。</p>
+<h2>9. 安全管理</h2>
+<p>当方は、取り扱う情報へのアクセスを必要な範囲に制限するなど、情報の保護に努めます。本サイトはHTTPSで提供します。これらの対策を行っても、端末・アカウントの安全性や通信環境による影響を完全に防げるとは限りません。</p>
+<h2>10. 対象年齢</h2>
+<p>本アプリは18歳以上の方を対象としています。お子様や未成年者の情報の取扱いについて懸念がある場合はお問い合わせください。問題が確認された場合は、状況に応じて必要な対応を行います。</p>
+<h2>11. 本ポリシー掲載サイト</h2>
+<p>本サイトはGitHub Pagesで公開しています。GitHubはサイトの安全確保などのため、閲覧者のIPアドレスを記録・保存します。当方は、本サイトに独自のアクセス解析ツールや広告タグを設置していません。</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する説明</a></p>
+<h2>12. ポリシーの変更</h2>
+<p>アプリの機能や法令などの変更に応じて、本ポリシーを更新することがあります。変更後の内容と更新日は本ページに掲載し、法令上必要な場合には追加の通知や同意確認を行います。</p>
+<div class="policy-contact" id="ja-contact">
+<h2>運営者・お問い合わせ</h2>
+<p>運営者：Molymorph（日本での個人運営）</p>
+<p>お問い合わせ：<a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
+<section id="zh-CN" lang="zh-CN" data-policy-language="zh-CN" aria-labelledby="policy-title">
+<p class="document-date">制定日期：2026年10月16日／最后更新日期：2026年10月31日</p>
+<p>Molymorph（以下简称“我们”）就Android应用“电流急急棒：旋转挑战”（日文名：くるりんイライラ棒；英文名：Buzz Wire: Spin Challenge，以下简称“本应用”）及刊载本政策的网站如何处理信息，作以下说明。本政策也适用于同一应用的其他语言版本。</p>
+<h2>1. 游戏记录与设备内存储</h2>
+<p>本应用会在设备内保存游戏进度、解锁状态、获得的钥匙、通关时间、通过广告增加LIFE的记录、显示语言、声音设置、提示和评价邀请的相关记录等。本应用没有独立的用户账号，也没有将游戏进度发送到我们的服务器进行同步的功能。</p>
+<p>根据Android设置、操作系统和设备的情况，部分保存数据会纳入Android标准备份或设备间迁移的范围。我们没有访问这些备份的功能。有关删除和恢复，请参阅“6. 保存记录的删除与备份”。</p>
+<h2>2. 广告投放涉及的信息处理</h2>
+<p>本应用使用Google AdMob的广告投放软件（Google Mobile Ads SDK），显示通过观看视频获得奖励的广告以及切换画面时的广告。Google及参与广告投放的服务商可能根据SDK、设备设置、地区、用户选择等情况，获取、发送及使用以下信息。</p>
+<ul>
+<li>IP地址，以及根据IP地址推断的大致地区</li>
+<li>广告ID、应用集ID，以及在广告投放软件内生成的临时标识符等</li>
+<li>应用启动、广告展示、点击、视频观看等使用信息</li>
+<li>故障、诊断、处理性能等技术信息（应用、SDK、操作系统的版本、设备型号、网络连接状态、错误信息等）</li>
+</ul>
+<p>这些信息会在各类标识符获准的范围内，用于广告投放和个性化、广告效果衡量与分析、服务维护、欺诈行为的检测与防范等。应用集ID不用于广告个性化或广告效果衡量，也不会出于广告目的与广告ID等标识符或个人信息关联。</p>
+<p>Google Mobile Ads SDK发送数据时会进行加密（TLS）。有关外部服务的信息处理和保存期限，也请查阅各提供商的说明。</p>
+<p>广告个性化与Google及设备的设置、用户选择以及适用要求有关。即使是非个性化广告，也可能为控制展示次数、统计及防范欺诈等目的而处理信息。</p>
+<p><a href="https://policies.google.com/privacy?hl=zh-CN">Google隐私政策</a> ／ <a href="https://policies.google.com/technologies/partner-sites?hl=zh-CN">从使用Google服务的网站或应用中收集的信息如何被使用</a> ／ <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=zh-CN">Google Mobile Ads SDK的数据说明</a></p>
+<h2>3. 广告隐私设置</h2>
+<p>如果应用的设置页面中显示广告隐私设置，您可以从那里更改所作的选择。需要确认同意时，我们使用Google的机制（User Messaging Platform，UMP）。</p>
+<p>您也可以在Android的广告设置中，在可用范围内重置或删除广告ID等。这项操作与删除已经处理的信息是两回事。有关Google如何使用数据以及可用的管理方式，请查阅Google的说明。</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=zh-CN">Google关于广告与隐私的说明</a></p>
+<h2>4. 咨询时收到的信息</h2>
+<p>当您通过电子邮件联系我们时，我们会收到您的电子邮件地址、邮件中填写的姓名、咨询内容，以及您自愿提供的设备信息或图片等。我们将这些信息用于处理咨询、调查原因及必要的联系。</p>
+<p>对于我们管理的咨询邮件、附件及副本，我们会在咨询处理结束时删除其中不再需要的内容。为说明如何回应权利行使请求而保留的最少记录，以及为履行具体法律义务或保护权利所需的信息，会在相关目的所需的范围内保留。</p>
+<h2>5. 外部服务与境外信息处理</h2>
+<p>本应用和相关网站使用Google AdMob及UMP投放广告和确认同意，使用Google Play进行分发、提供评价等，使用操作系统备份，使用Gmail接收和处理咨询，并使用GitHub Pages刊载本政策。各服务提供商会根据所使用的功能处理信息。</p>
+<p>我们负责管理本应用广告功能的集成与设置，以及我们收到的咨询信息的使用目的、保存、删除等。对于Google等提供商自主决定使用目的和方式的信息处理，也适用各提供商的说明。如对我们决定的信息处理有疑问，可以通过我们的联系渠道咨询。</p>
+<p>我们在日本接收咨询。Google、GitHub等服务也可能在您居住的国家或地区以外处理信息。有关Google服务中的信息使用、共享和保存，请查阅Google关于信息使用和保留的说明。Android备份的管理也取决于所用服务和设备的设置。</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=zh-CN">Google关于信息使用的说明</a> ／ <a href="https://policies.google.com/technologies/retention?hl=zh-CN">Google关于数据保留的说明</a> ／ <a href="https://support.google.com/android/answer/2819582?hl=zh-CN">Android备份说明</a></p>
+<h2>6. 保存记录的删除与备份</h2>
+<p>游戏保存记录会留在设备内，直至数据被重置、删除等。您可以在Android的“设置 → 应用 → 本应用 → 存储”中选择“清除存储空间”或“清除数据”，重置设备内的记录。显示名称和操作步骤因设备而异。仅清除缓存不会删除记录。</p>
+<p>清除设备内数据与删除云端备份是两回事。卸载后重新安装等情况下，记录可能从Android备份中恢复。请通过Android或Google账号的设置管理备份。</p>
+<p>Google等提供商独立处理的广告相关信息以及Android备份的保存期限，遵循各服务的条款、政策及用户设置。</p>
+<h2>7. 个人信息相关咨询</h2>
+<p>根据适用法律法规和处理条件，您可以请求确认、访问、更正或删除信息，对信息处理提出异议或撤回同意等。请通过<a href="mailto:studio.molymorph+privacy@gmail.com">隐私联系渠道</a>告知我们您希望采取的措施及所涉及的信息。</p>
+<p>对于依法需要处理的请求，我们会在确认请求的对象、内容以及我们对信息的处理情况后作出回应。</p>
+<p>根据请求内容，我们可能会使用必要的最少信息核实您的身份。您不需要一开始就发送身份证明文件或设备内的全部游戏记录。</p>
+<p>我们没有远程查看或删除仅保存在设备内的游戏记录的机制。有关删除设备内记录的方法，请参阅“6. 保存记录的删除与备份”。对于外部服务处理的信息，我们会确认能够处理的范围，并在必要时告知您相应提供商的联系渠道。</p>
+<h2>8. 巴西用户的权利（LGPD）</h2>
+<p>在LGPD认可的范围内，您可以提出以下请求。</p>
+<ul>
+<li>确认是否处理信息、访问信息以及更正信息</li>
+<li>对不必要、过量或违法处理的信息进行匿名化、停止使用或删除</li>
+<li>转移数据、说明信息接收方</li>
+<li>对于基于同意的信息处理，说明不同意的影响、撤回同意，以及除法律规定的例外情形外删除信息</li>
+<li>对违法的信息处理提出异议</li>
+<li>复核完全基于个人数据自动化处理作出、且影响用户利益的决定</li>
+</ul>
+<p>您也可以向<a href="https://www.gov.br/anpd/pt-br">巴西数据保护机构ANPD</a>提出申诉。</p>
+<p>我们通过<a href="mailto:studio.molymorph+privacy@gmail.com">隐私联系渠道</a>免费受理请求，并按照适用法律法规等规定，在规定期限内处理。如果无法立即采取您希望的措施，我们会说明原因及可采取的措施。</p>
+<h2>9. 安全管理</h2>
+<p>我们通过将信息访问限制在必要范围等措施，努力保护所处理的信息。本网站通过HTTPS提供服务。即使采取这些措施，也未必能完全防止设备、账号的安全状况或网络环境所带来的影响。</p>
+<h2>10. 适用年龄</h2>
+<p>本应用面向18岁及以上人士。如果您对儿童或未成年人的信息处理有疑虑，请联系我们。确认存在问题后，我们会根据具体情况采取必要措施。</p>
+<h2>11. 刊载本政策的网站</h2>
+<p>本网站通过GitHub Pages发布。GitHub会为保障网站安全等目的，记录和保存访问者的IP地址。我们没有在本网站设置自行部署的访问分析工具或广告标签。</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub隐私说明</a></p>
+<h2>12. 本政策的变更</h2>
+<p>我们可能根据应用功能或法律法规等的变化更新本政策。变更后的内容和更新日期将刊载于本页面；如法律要求，我们还会另行通知或确认同意。</p>
+<div class="policy-contact" id="zh-CN-contact">
+<h2>运营者与联系方式</h2>
+<p>运营者：Molymorph（在日本由个人运营）</p>
+<p>联系方式：<a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
+<section id="zh-TW" lang="zh-TW" data-policy-language="zh-TW" aria-labelledby="policy-title">
+<p class="document-date">制定日期：2026年10月16日／最後更新日期：2026年10月31日</p>
+<p>Molymorph（以下稱「我們」）就Android應用程式「電流急急棒：旋轉挑戰」（日文名稱：くるりんイライラ棒；英文名稱：Buzz Wire: Spin Challenge，以下稱「本應用程式」）及刊載本政策的網站如何處理資訊，作以下說明。本政策也適用於同一應用程式的其他語言版本。</p>
+<h2>1. 遊戲紀錄與裝置內儲存</h2>
+<p>本應用程式會在裝置內儲存遊戲進度、解鎖狀態、獲得的鑰匙、通關時間、透過廣告增加LIFE的紀錄、顯示語言、音效設定、提示與評價邀請的相關紀錄等。本應用程式沒有獨立的使用者帳戶，也沒有將遊戲進度傳送至我們的伺服器進行同步的功能。</p>
+<p>依Android設定、作業系統及裝置而定，部分儲存資料會納入Android標準備份或裝置間移轉的範圍。我們沒有存取這些備份的功能。關於刪除與還原，請參閱「6. 儲存紀錄的刪除與備份」。</p>
+<h2>2. 廣告投放涉及的資訊處理</h2>
+<p>本應用程式使用Google AdMob的廣告投放軟體（Google Mobile Ads SDK），顯示觀看影片可獲得獎勵的廣告，以及畫面切換時的廣告。Google及參與廣告投放的業者可能依SDK、裝置設定、地區、使用者選擇等情況，取得、傳送及使用下列資訊。</p>
+<ul>
+<li>IP位址，以及依IP位址推估的大致地區</li>
+<li>廣告ID、應用程式集ID，以及在廣告投放軟體內產生的暫時性識別碼等</li>
+<li>應用程式啟動、廣告顯示、點選、影片觀看等使用資訊</li>
+<li>故障、診斷、處理效能等技術資訊（應用程式、SDK、作業系統的版本、裝置型號、網路連線狀態、錯誤資訊等）</li>
+</ul>
+<p>這些資訊會在各類識別碼獲准的範圍內，用於廣告投放與個人化、廣告成效評估與分析、服務維護、詐欺行為的偵測與防範等。應用程式集ID不會用於廣告個人化或廣告成效評估，也不會基於廣告目的與廣告ID等識別碼或個人資料連結。</p>
+<p>Google Mobile Ads SDK傳送資料時會進行加密（TLS）。關於外部服務的資訊處理與保存期間，也請參閱各提供者的說明。</p>
+<p>廣告個人化與Google及裝置的設定、使用者選擇，以及適用要求有關。即使是非個人化廣告，也可能為管理顯示次數、統計及防範詐欺等目的而處理資訊。</p>
+<p><a href="https://policies.google.com/privacy?hl=zh-TW">Google隱私權政策</a> ／ <a href="https://policies.google.com/technologies/partner-sites?hl=zh-TW">從使用Google服務的網站或應用程式蒐集的資訊如何使用</a> ／ <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=zh-TW">Google Mobile Ads SDK的資料說明</a></p>
+<h2>3. 廣告隱私權設定</h2>
+<p>如果應用程式的設定畫面顯示廣告隱私權設定，您可以從該處變更選擇內容。需要確認同意時，我們會使用Google的機制（User Messaging Platform，UMP）。</p>
+<p>您也可以在Android的廣告設定中，於可用範圍內重設或刪除廣告ID等。這項操作與刪除已經處理的資訊是不同的。關於Google如何使用資料及可用的管理方式，請參閱Google的說明。</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=zh-TW">Google關於廣告與隱私權的說明</a></p>
+<h2>4. 聯絡諮詢時收到的資訊</h2>
+<p>當您透過電子郵件聯絡我們時，我們會收到您的電子郵件地址、信中填寫的姓名、諮詢內容，以及您自願提供的裝置資訊或圖片等。我們會將這些資訊用於處理諮詢、調查原因及必要的聯繫。</p>
+<p>對於我們管理的諮詢郵件、附件及副本，我們會在諮詢處理結束時刪除其中不再需要的內容。為說明如何回應權利行使請求而保留的最少紀錄，以及為履行具體法律義務或保護權利所需的資訊，會在相關目的所需的範圍內保留。</p>
+<h2>5. 外部服務與境外資訊處理</h2>
+<p>本應用程式及相關網站使用Google AdMob與UMP投放廣告及確認同意，使用Google Play進行發布、提供評論等，使用作業系統備份，使用Gmail接收與處理諮詢，並使用GitHub Pages刊載本政策。各服務提供者會依所使用的功能處理資訊。</p>
+<p>我們負責管理本應用程式廣告功能的整合與設定，以及我們收到的諮詢資訊的使用目的、保存、刪除等。對於Google等提供者自主決定使用目的及方式的資訊處理，也適用各提供者的說明。如對我們決定的資訊處理有疑問，可以透過我們的聯絡管道諮詢。</p>
+<p>我們在日本接收諮詢。Google、GitHub等服務也可能在您居住的國家或地區以外處理資訊。關於Google服務中的資訊使用、分享與保存，請參閱Google關於資訊使用及保留的說明。Android備份的管理也取決於所用服務及裝置的設定。</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=zh-TW">Google關於資訊使用的說明</a> ／ <a href="https://policies.google.com/technologies/retention?hl=zh-TW">Google關於資料保留的說明</a> ／ <a href="https://support.google.com/android/answer/2819582?hl=zh-TW">Android備份說明</a></p>
+<h2>6. 儲存紀錄的刪除與備份</h2>
+<p>遊戲儲存紀錄會留在裝置內，直到資料被重設、刪除等。您可以在Android的「設定 → 應用程式 → 本應用程式 → 儲存空間」中選擇「清除儲存空間」或「清除資料」，重設裝置內的紀錄。顯示名稱及操作步驟會因裝置而異。僅清除快取不會刪除紀錄。</p>
+<p>清除裝置內資料與刪除雲端備份是不同的。解除安裝後重新安裝等情況下，紀錄可能會從Android備份中還原。請透過Android或Google帳戶的設定管理備份。</p>
+<p>Google等提供者獨立處理的廣告相關資訊，以及Android備份的保存期間，依各服務的條款、政策及使用者設定而定。</p>
+<h2>7. 個人資料相關諮詢</h2>
+<p>依適用法令及處理條件，您可以要求確認、存取、更正或刪除資訊，對資訊處理提出異議或撤回同意等。請透過<a href="mailto:studio.molymorph+privacy@gmail.com">隱私權聯絡管道</a>告知我們您希望採取的措施及所涉及的資訊。</p>
+<p>對於依法需要處理的請求，我們會在確認請求的對象、內容，以及我們對資訊的處理情況後回應。</p>
+<p>依請求內容，我們可能會使用必要的最少資訊確認您的身分。您不需要一開始就傳送身分證明文件或裝置內的全部遊戲紀錄。</p>
+<p>我們沒有遠端查看或刪除僅儲存在裝置內的遊戲紀錄的機制。關於刪除裝置內紀錄的方法，請參閱「6. 儲存紀錄的刪除與備份」。對於外部服務處理的資訊，我們會確認能夠處理的範圍，並在必要時提供相應提供者的聯絡管道。</p>
+<h2>8. 巴西使用者的權利（LGPD）</h2>
+<p>在LGPD認可的範圍內，您可以提出下列請求。</p>
+<ul>
+<li>確認是否處理資訊、存取資訊，以及更正資訊</li>
+<li>對不必要、過量或違法處理的資訊進行匿名化、停止使用或刪除</li>
+<li>移轉資料、說明資訊接收對象</li>
+<li>對於基於同意的資訊處理，說明不同意的影響、撤回同意，以及除法令規定的例外情形外刪除資訊</li>
+<li>對違法的資訊處理提出異議</li>
+<li>重新審查完全以個人資料自動處理為基礎、且影響使用者利益的決定</li>
+</ul>
+<p>您也可以向<a href="https://www.gov.br/anpd/pt-br">巴西資料保護機關ANPD</a>提出申訴。</p>
+<p>我們透過<a href="mailto:studio.molymorph+privacy@gmail.com">隱私權聯絡管道</a>免費受理請求，並依適用法令等規定，在規定期限內處理。如果無法立即採取您希望的措施，我們會說明原因及可採取的措施。</p>
+<h2>9. 安全管理</h2>
+<p>我們透過將資訊存取限制在必要範圍等措施，致力保護所處理的資訊。本網站透過HTTPS提供服務。即使採取這些措施，也未必能完全防止裝置、帳戶的安全狀況或網路環境所帶來的影響。</p>
+<h2>10. 適用年齡</h2>
+<p>本應用程式以18歲以上人士為對象。如果您對兒童或未成年人的資訊處理有疑慮，請與我們聯絡。確認存在問題後，我們會依具體情況採取必要措施。</p>
+<h2>11. 刊載本政策的網站</h2>
+<p>本網站透過GitHub Pages發布。GitHub會為確保網站安全等目的，記錄與保存訪客的IP位址。我們沒有在本網站設置自行部署的流量分析工具或廣告標籤。</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub隱私權說明</a></p>
+<h2>12. 本政策的變更</h2>
+<p>我們可能依應用程式功能或法令等的變更更新本政策。變更後的內容與更新日期會刊載於本頁面；如法令要求，我們也會另行通知或確認同意。</p>
+<div class="policy-contact" id="zh-TW-contact">
+<h2>營運者與聯絡方式</h2>
+<p>營運者：Molymorph（在日本由個人營運）</p>
+<p>聯絡方式：<a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
+<section id="ko-KR" lang="ko-KR" data-policy-language="ko-KR" aria-labelledby="policy-title">
+<p class="document-date">제정일: 2026년 10월 16일／최종 업데이트일: 2026년 10월 31일</p>
+<p>Molymorph(이하 “운영자”)는 Android 앱 “전기미로: 회전 도전”(일본어명: くるりんイライラ棒, 영어명: Buzz Wire: Spin Challenge, 이하 “본 앱”) 및 본 방침이 게시된 사이트에서의 정보 처리에 관하여 다음과 같이 설명합니다. 본 방침은 동일한 앱의 다른 언어 버전에도 적용됩니다.</p>
+<h2>1. 게임 기록과 기기 내 저장</h2>
+<p>본 앱은 진행 상황, 잠금 해제 상태, 획득한 열쇠, 클리어 시간, 광고를 통한 LIFE 추가 기록, 표시 언어, 음향 설정, 안내 및 리뷰 요청 관련 기록 등을 기기에 저장합니다. 본 앱 자체 사용자 계정이나 진행 상황을 운영자의 서버로 전송하여 동기화하는 기능은 없습니다.</p>
+<p>Android 설정, OS 및 기기에 따라 저장 데이터 일부가 Android 표준 백업이나 기기 간 이전 대상이 됩니다. 운영자는 이 백업에 접근하는 기능을 갖추고 있지 않습니다. 삭제나 복원에 대해서는 “6. 저장 기록 삭제와 백업”을 확인해 주세요.</p>
+<h2>2. 광고 제공에 따른 정보 처리</h2>
+<p>본 앱은 Google AdMob의 광고 제공 소프트웨어(Google Mobile Ads SDK)를 사용하여 동영상 시청에 따른 보상형 광고와 화면 전환 시 광고를 표시합니다. Google 및 광고 제공에 관여하는 사업자는 SDK, 기기 설정, 지역, 이용자의 선택 등에 따라 다음 정보를 수집·전송·이용할 수 있습니다.</p>
+<ul>
+<li>IP 주소 및 IP 주소로 추정한 대략적인 지역</li>
+<li>광고 ID, 앱 세트 ID, 광고 제공 소프트웨어 내에서 생성되는 임시 식별자 등</li>
+<li>앱 실행, 광고 표시·탭·동영상 시청 등의 이용 정보</li>
+<li>장애, 진단, 처리 성능 등의 기술 정보(앱·SDK·OS 버전, 기기 모델, 통신 상태, 오류 정보 등)</li>
+</ul>
+<p>이러한 정보는 식별자별로 허용된 범위에서 광고 제공·개인화, 광고 효과 측정·분석, 서비스 유지, 부정행위 탐지·방지 등에 사용됩니다. 앱 세트 ID는 광고 개인화나 광고 효과 측정에 사용하지 않으며, 광고 목적으로 광고 ID 등의 식별자나 개인정보와 연결하지 않습니다.</p>
+<p>Google Mobile Ads SDK를 통한 데이터 전송은 암호화됩니다(TLS). 외부 서비스의 정보 처리 및 보관 기간에 대해서는 각 제공자의 설명도 확인해 주세요.</p>
+<p>광고 개인화에는 Google 및 기기의 설정, 이용자의 선택, 적용되는 요건이 관련됩니다. 개인화되지 않은 광고에서도 노출 횟수 관리, 집계, 부정행위 방지 등을 위해 정보가 처리될 수 있습니다.</p>
+<p><a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a> ／ <a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google 서비스를 사용하는 사이트나 앱에서 수집한 정보의 이용</a> ／ <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=ko">Google Mobile Ads SDK의 데이터에 관한 설명</a></p>
+<h2>3. 광고 개인정보 보호 설정</h2>
+<p>앱의 설정 화면에 광고 개인정보 보호 설정이 표시되는 경우, 해당 화면에서 선택 내용을 변경할 수 있습니다. 동의 확인이 필요한 경우에는 Google의 시스템(User Messaging Platform, UMP)을 사용합니다.</p>
+<p>Android의 광고 설정에서도 제공되는 범위 내에서 광고 ID를 재설정하거나 삭제하는 등의 조치를 할 수 있습니다. 이 조치는 이미 처리된 정보의 삭제와는 별개입니다. Google의 데이터 이용 및 제공되는 관리 방법에 대해서는 Google의 설명을 확인해 주세요.</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=ko">광고 및 개인정보 보호에 관한 Google의 설명</a></p>
+<h2>4. 문의 시 받는 정보</h2>
+<p>이메일로 문의하시면 이메일 주소, 기재된 이름, 문의 내용, 자발적으로 제공한 기기 정보나 이미지 등을 받습니다. 이 정보는 문의 대응, 원인 조사 및 필요한 연락을 위해 이용합니다.</p>
+<p>운영자가 관리하는 문의 이메일, 첨부 파일 및 사본 중 더 이상 필요하지 않은 것은 문의 대응이 종료될 때 삭제합니다. 권리 행사 요청에 대한 대응을 설명하기 위한 최소한의 기록이나 구체적인 법적 의무 이행·권리 보호를 위해 필요한 정보는 해당 목적에 필요한 범위에서 보관합니다.</p>
+<h2>5. 외부 서비스 및 국외에서의 정보 처리</h2>
+<p>본 앱과 관련 사이트에서는 광고 제공·동의 확인을 위해 Google AdMob·UMP, 배포·리뷰 등을 위해 Google Play, OS 백업, 문의 접수·대응을 위해 Gmail, 본 방침 게시를 위해 GitHub Pages를 이용합니다. 이용하는 기능에 따라 각 제공자가 정보를 처리합니다.</p>
+<p>운영자는 본 앱에 광고 기능을 통합·설정하는 일과 운영자가 받은 문의 정보의 이용 목적·보관·삭제 등을 관리합니다. Google 등이 독자적으로 이용 목적과 방법을 정하여 처리하는 경우에는 각 제공자의 설명도 적용됩니다. 운영자가 결정하는 정보 처리에 관한 문의는 운영자의 창구에서 접수합니다.</p>
+<p>운영자는 일본에서 문의를 받습니다. Google이나 GitHub 등의 서비스에서도 거주하시는 국가·지역 외에서 정보가 처리될 수 있습니다. Google 서비스에서의 이용·공유·보관에 대해서는 Google의 정보 이용 및 보관에 관한 설명을 확인해 주세요. Android 백업 관리는 이용하는 서비스나 기기의 설정에 따라서도 달라집니다.</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google의 정보 이용에 관한 설명</a> ／ <a href="https://policies.google.com/technologies/retention?hl=ko">Google의 데이터 보관에 관한 설명</a> ／ <a href="https://support.google.com/android/answer/2819582?hl=ko">Android 백업에 관한 설명</a></p>
+<h2>6. 저장 기록 삭제와 백업</h2>
+<p>게임 저장 기록은 데이터를 초기화·삭제하는 등의 조치를 할 때까지 기기에 남습니다. Android의 “설정 → 앱 → 본 앱 → 저장공간”에서 “저장공간 지우기” 또는 “데이터 삭제”를 실행하면 기기 내 기록을 초기화할 수 있습니다. 표시 이름이나 절차는 기기에 따라 다릅니다. 캐시만 삭제해서는 기록이 지워지지 않습니다.</p>
+<p>기기 내 데이터 삭제와 클라우드 백업 삭제는 별개입니다. 앱을 삭제한 후 다시 설치하는 등의 경우 Android 백업에서 기록이 복원될 수 있습니다. 백업은 Android나 Google 계정의 설정에서 관리해 주세요.</p>
+<p>Google 등이 독자적으로 처리하는 광고 관련 정보와 Android 백업의 보관 기간은 각 서비스의 약관·방침 및 이용자의 설정을 따릅니다.</p>
+<h2>7. 개인정보에 관한 문의</h2>
+<p>적용되는 법령과 처리 조건에 따라 정보의 확인, 접근, 정정, 삭제, 처리에 대한 이의 제기나 동의 철회 등을 요청할 수 있습니다. <a href="mailto:studio.molymorph+privacy@gmail.com">개인정보 문의 창구</a>로 원하는 조치와 대상 정보를 알려 주세요.</p>
+<p>법령상 대응이 필요한 요청에는 요청의 대상과 내용, 운영자의 정보 처리를 확인한 후 대응합니다.</p>
+<p>내용에 따라 필요한 최소한의 정보로 본인 확인을 할 수 있습니다. 처음부터 신분증이나 기기 내 게임 기록 전체를 보낼 필요는 없습니다.</p>
+<p>운영자는 기기에만 저장된 게임 기록을 원격으로 열람·삭제하는 시스템을 갖추고 있지 않습니다. 기기 내 기록 삭제 방법은 “6. 저장 기록 삭제와 백업”을 확인해 주세요. 외부 서비스가 처리하는 정보에 대해서는 운영자가 대응할 수 있는 범위를 확인하고, 필요한 경우 해당 제공자의 문의 창구도 안내합니다.</p>
+<h2>8. 브라질 이용자의 권리(LGPD)</h2>
+<p>LGPD에서 인정하는 범위 내에서 다음 사항을 요청할 수 있습니다.</p>
+<ul>
+<li>처리 여부의 확인, 정보 접근 및 정정</li>
+<li>불필요하거나 과도하게 또는 법령을 위반하여 처리된 정보의 익명화·이용 중지·삭제</li>
+<li>데이터 이전, 정보 제공 대상에 관한 설명</li>
+<li>동의에 근거한 처리에 대하여 동의하지 않을 경우의 영향 설명, 동의 철회, 법령상 예외를 제외한 삭제</li>
+<li>법령을 위반한 처리에 대한 이의 제기</li>
+<li>개인정보의 자동 처리에만 근거하여 이루어지고 이용자의 이익에 영향을 미치는 결정에 대한 재검토</li>
+</ul>
+<p><a href="https://www.gov.br/anpd/pt-br">브라질 데이터 보호기관 ANPD</a>에 이의를 신청할 수도 있습니다.</p>
+<p>요청은 <a href="mailto:studio.molymorph+privacy@gmail.com">개인정보 문의 창구</a>에서 무료로 접수합니다. 적용되는 법령 등에 따라 정해진 기한 내에 대응합니다. 원하는 조치를 즉시 취할 수 없는 경우에는 그 이유와 가능한 대응을 설명합니다.</p>
+<h2>9. 안전 관리</h2>
+<p>운영자는 처리하는 정보에 대한 접근을 필요한 범위로 제한하는 등 정보 보호를 위해 노력합니다. 본 사이트는 HTTPS로 제공됩니다. 이러한 조치를 취하더라도 기기·계정의 안전성이나 통신 환경에 따른 영향을 완전히 방지할 수 있는 것은 아닙니다.</p>
+<h2>10. 이용 대상 연령</h2>
+<p>본 앱은 만 18세 이상을 대상으로 합니다. 아동이나 미성년자의 정보 처리에 관하여 우려가 있는 경우 문의해 주세요. 문제가 확인되면 상황에 따라 필요한 조치를 취합니다.</p>
+<h2>11. 본 방침이 게시된 사이트</h2>
+<p>본 사이트는 GitHub Pages로 공개합니다. GitHub는 사이트의 안전 확보 등을 위해 방문자의 IP 주소를 기록·보관합니다. 운영자는 본 사이트에 자체적인 접속 분석 도구나 광고 태그를 설치하지 않았습니다.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보 보호에 관한 설명</a></p>
+<h2>12. 본 방침의 변경</h2>
+<p>앱 기능이나 법령 등의 변경에 따라 본 방침을 업데이트할 수 있습니다. 변경된 내용과 업데이트 날짜는 이 페이지에 게시하며, 법령상 필요한 경우에는 추가 안내나 동의 확인을 합니다.</p>
+<div class="policy-contact" id="ko-KR-contact">
+<h2>운영자 및 문의</h2>
+<p>운영자: Molymorph(일본에서 개인 운영)</p>
+<p>문의: <a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
+<section id="es-ES" lang="es-ES" data-policy-language="es-ES" aria-labelledby="policy-title">
+<p class="document-date">Fecha de entrada en vigor: 16 de octubre de 2026 / Última actualización: 31 de octubre de 2026</p>
+<p>Molymorph (en adelante, «nosotros») explica a continuación cómo se trata la información en la aplicación Android «Pulso Firme: Reto Giratorio» (título en japonés: くるりんイライラ棒; título en inglés: Buzz Wire: Spin Challenge; en adelante, la «Aplicación») y en el sitio web donde se publica esta Política. Esta Política también se aplica a las versiones de la misma Aplicación en otros idiomas.</p>
+<h2>1. Registros del juego y almacenamiento en el dispositivo</h2>
+<p>La Aplicación almacena en el dispositivo información como el progreso, el estado de desbloqueo, las llaves obtenidas, los tiempos de finalización, los registros de LIFE añadida mediante anuncios, el idioma de visualización, los ajustes de audio y los registros relacionados con las indicaciones y las solicitudes de reseñas. La Aplicación no dispone de un sistema propio de cuentas de usuario ni de una función que envíe el progreso a nuestros servidores para sincronizarlo.</p>
+<p>Según los ajustes de Android, el sistema operativo y el dispositivo, algunos datos guardados pueden incluirse en la copia de seguridad estándar de Android o en la transferencia entre dispositivos. No disponemos de una función que nos permita acceder a esas copias de seguridad. Para obtener información sobre la eliminación y la restauración, consulte «6. Eliminación de registros guardados y copias de seguridad».</p>
+<h2>2. Tratamiento de la información relacionado con la publicidad</h2>
+<p>La Aplicación utiliza el software de publicación de anuncios de Google AdMob (Google Mobile Ads SDK) para mostrar anuncios bonificados por ver vídeos y anuncios al cambiar de pantalla. Según el SDK, los ajustes del dispositivo, la región, sus elecciones y otros factores, Google y las empresas que participan en la publicación de anuncios pueden recopilar, transmitir y utilizar la siguiente información.</p>
+<ul>
+<li>Dirección IP y ubicación aproximada inferida a partir de la dirección IP</li>
+<li>ID de publicidad, ID del conjunto de aplicaciones (App Set ID), identificadores temporales generados dentro del software de publicación de anuncios y otros identificadores similares</li>
+<li>Información de uso, como aperturas de la aplicación, impresiones de anuncios, pulsaciones y visualizaciones de vídeos</li>
+<li>Información técnica sobre fallos, diagnósticos y rendimiento (como las versiones de la aplicación, del SDK y del sistema operativo, el modelo del dispositivo, el estado de la conexión y la información sobre errores)</li>
+</ul>
+<p>Esta información se utiliza para fines como la publicación y la personalización de anuncios dentro de los límites permitidos para cada identificador, la medición y el análisis de la eficacia de los anuncios, el mantenimiento de los servicios y la detección y prevención del fraude. El App Set ID no se utiliza para personalizar anuncios ni para medir su eficacia, y no se vincula con identificadores como el ID de publicidad ni con información personal con fines publicitarios.</p>
+<p>Los datos transmitidos por Google Mobile Ads SDK se cifran (TLS). Consulte también las explicaciones de cada proveedor sobre cómo tratan la información los servicios externos y durante cuánto tiempo la conservan.</p>
+<p>La personalización de anuncios depende de los ajustes de Google y del dispositivo, de sus elecciones y de los requisitos aplicables. Incluso los anuncios no personalizados pueden implicar el tratamiento de información para fines como el control de la frecuencia, la agregación y la prevención del fraude.</p>
+<p><a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a> / <a href="https://policies.google.com/technologies/partner-sites?hl=es">Cómo utiliza Google la información de sitios web o aplicaciones que usan sus servicios</a> / <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=es">Información sobre los datos de Google Mobile Ads SDK</a></p>
+<h2>3. Ajustes de privacidad de los anuncios</h2>
+<p>Si los ajustes de privacidad de los anuncios aparecen en la pantalla de ajustes de la Aplicación, puede modificar sus elecciones desde allí. Cuando sea necesario solicitar consentimiento, utilizamos el sistema de Google User Messaging Platform (UMP).</p>
+<p>También puede restablecer o eliminar el ID de publicidad desde los ajustes de anuncios de Android, en la medida en que estén disponibles estas opciones. Esta acción es distinta de eliminar la información que ya se ha tratado. Consulte las explicaciones de Google sobre el uso de datos y las opciones de control disponibles.</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=es">Explicación de Google sobre la publicidad y la privacidad</a></p>
+<h2>4. Información recibida a través de consultas</h2>
+<p>Si se pone en contacto con nosotros por correo electrónico, recibimos su dirección de correo electrónico, el nombre que indique, el contenido de la consulta y cualquier información sobre el dispositivo, imágenes u otros datos que facilite voluntariamente. Utilizamos esta información para responder, investigar las causas y realizar las comunicaciones necesarias.</p>
+<p>Cuando finalizamos la atención de una consulta, eliminamos los correos electrónicos, los archivos adjuntos y las copias bajo nuestro control que ya no sean necesarios. Conservamos los registros mínimos necesarios para explicar nuestra respuesta al ejercicio de derechos, así como la información necesaria para cumplir obligaciones legales específicas o proteger derechos, en la medida necesaria para esos fines.</p>
+<h2>5. Servicios externos y tratamiento fuera de su país</h2>
+<p>La Aplicación y los sitios web relacionados utilizan Google AdMob y UMP para la publicidad y las solicitudes de consentimiento, Google Play para la distribución, las reseñas y las funciones relacionadas, las copias de seguridad del sistema operativo, Gmail para recibir y responder consultas y GitHub Pages para publicar esta Política. Cada proveedor trata información en función de las características utilizadas.</p>
+<p>Nosotros controlamos la integración y la configuración de las funciones publicitarias de la Aplicación, así como los fines de uso, la conservación, la eliminación y otras formas de tratamiento de la información de consultas que recibimos. Las explicaciones de cada proveedor también se aplican al tratamiento cuyos fines y métodos determina Google u otro proveedor de forma independiente. Atendemos consultas a través de nuestro punto de contacto sobre el tratamiento que determinamos.</p>
+<p>Recibimos consultas en Japón. Servicios como Google y GitHub también pueden tratar información fuera de su país o región de residencia. Para obtener información sobre el uso, la comunicación y la conservación en los servicios de Google, consulte sus explicaciones sobre el uso y la conservación de información. La gestión de las copias de seguridad de Android también depende de los servicios que utilice y de los ajustes del dispositivo.</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=es">Explicación de Google sobre el uso de información</a> / <a href="https://policies.google.com/technologies/retention?hl=es">Explicación de Google sobre la conservación de datos</a> / <a href="https://support.google.com/android/answer/2819582?hl=es">Información sobre las copias de seguridad de Android</a></p>
+<h2>6. Eliminación de registros guardados y copias de seguridad</h2>
+<p>Los registros guardados del juego permanecen en el dispositivo hasta que restablezca o elimine los datos o realice una acción similar. Puede restablecer los registros del dispositivo desde «Ajustes → Aplicaciones → la Aplicación → Almacenamiento» en Android, seleccionando «Borrar almacenamiento» o «Borrar datos». Los nombres y los pasos varían según el dispositivo. Borrar solo la caché no elimina los registros.</p>
+<p>Borrar los datos del dispositivo es una acción distinta de eliminar las copias de seguridad en la nube. Los registros pueden restaurarse desde una copia de seguridad de Android, por ejemplo, al reinstalar la Aplicación después de desinstalarla. Gestione las copias de seguridad desde los ajustes de Android o de su cuenta de Google.</p>
+<p>Los plazos de conservación de la información relacionada con la publicidad que Google u otros proveedores tratan de forma independiente, así como de las copias de seguridad de Android, se rigen por las condiciones y las políticas de los respectivos servicios y por sus ajustes.</p>
+<h2>7. Consultas sobre información personal</h2>
+<p>Según la legislación aplicable y las condiciones del tratamiento, puede solicitar medidas como la confirmación del tratamiento, el acceso, la rectificación, la supresión, la oposición al tratamiento o la retirada del consentimiento. Indique a nuestro <a href="mailto:studio.molymorph+privacy@gmail.com">punto de contacto de privacidad</a> la medida que solicita y la información a la que se refiere.</p>
+<p>Atendemos las solicitudes que debamos atender por obligación legal tras comprobar su objeto y contenido y cómo tratamos la información correspondiente.</p>
+<p>Según la solicitud, podemos verificar su identidad con la información mínima necesaria. No es necesario que envíe inicialmente un documento de identidad ni todos los registros del juego almacenados en el dispositivo.</p>
+<p>No disponemos de un mecanismo para consultar o eliminar de forma remota los registros del juego almacenados únicamente en su dispositivo. Para saber cómo eliminar los registros del dispositivo, consulte «6. Eliminación de registros guardados y copias de seguridad». En cuanto a la información tratada por servicios externos, comprobamos en qué medida podemos atender la solicitud y, cuando sea necesario, también indicamos el punto de contacto del proveedor correspondiente.</p>
+<h2>8. Derechos de los usuarios en Brasil (LGPD)</h2>
+<p>En la medida reconocida por la LGPD, puede solicitar las siguientes medidas.</p>
+<ul>
+<li>Confirmación de la existencia de tratamiento, acceso a la información y rectificación</li>
+<li>Anonimización, bloqueo o supresión de información innecesaria, excesiva o tratada de forma contraria a la ley</li>
+<li>Portabilidad de los datos e información sobre los destinatarios con quienes se comparten</li>
+<li>En el caso del tratamiento basado en el consentimiento, explicación de las consecuencias de no consentir, retirada del consentimiento y supresión, salvo las excepciones legales</li>
+<li>Oposición al tratamiento contrario a la ley</li>
+<li>Revisión de decisiones basadas únicamente en el tratamiento automatizado de datos personales que afecten a sus intereses</li>
+</ul>
+<p>También puede presentar una reclamación ante la <a href="https://www.gov.br/anpd/pt-br">autoridad de protección de datos de Brasil, ANPD</a>.</p>
+<p>Recibimos solicitudes de forma gratuita a través de nuestro <a href="mailto:studio.molymorph+privacy@gmail.com">punto de contacto de privacidad</a>. Respondemos dentro de los plazos establecidos por la legislación y los demás requisitos aplicables. Si no podemos adoptar de inmediato la medida solicitada, explicaremos los motivos y las actuaciones posibles.</p>
+<h2>9. Medidas de seguridad</h2>
+<p>Procuramos proteger la información, entre otras medidas, limitando el acceso a la información que tratamos a lo necesario. Este sitio web se ofrece mediante HTTPS. Incluso con estas medidas, puede no ser posible evitar por completo los efectos derivados de la seguridad de los dispositivos y las cuentas o de las condiciones de comunicación.</p>
+<h2>10. Edad del público destinatario</h2>
+<p>La Aplicación está dirigida a personas de 18 años o más. Póngase en contacto con nosotros si tiene alguna preocupación sobre el tratamiento de información de niños o menores de edad. Si se confirma un problema, adoptaremos las medidas necesarias según las circunstancias.</p>
+<h2>11. Sitio web donde se publica esta Política</h2>
+<p>Este sitio web se publica en GitHub Pages. GitHub registra y conserva las direcciones IP de los visitantes para fines como mantener la seguridad del sitio web. No instalamos herramientas propias de análisis de visitas ni etiquetas publicitarias en este sitio web.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Declaración de privacidad de GitHub</a></p>
+<h2>12. Cambios en esta Política</h2>
+<p>Podemos actualizar esta Política en función de cambios en las características de la Aplicación, en la legislación o en otras circunstancias. Publicamos el contenido revisado y la fecha de actualización en esta página y proporcionamos avisos adicionales o solicitamos consentimiento cuando lo exija la ley.</p>
+<div class="policy-contact" id="es-ES-contact">
+<h2>Responsable de la operación y contacto</h2>
+<p>Responsable de la operación: Molymorph (operación individual en Japón)</p>
+<p>Contacto: <a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
+<section id="pt-BR" lang="pt-BR" data-policy-language="pt-BR" aria-labelledby="policy-title">
+<p class="document-date">Data de vigência: 16 de outubro de 2026 / Última atualização: 31 de outubro de 2026</p>
+<p>A Molymorph (doravante, &quot;nós&quot;) explica a seguir como as informações são tratadas no aplicativo Android &quot;Teste de Nervos: Giro&quot; (título em japonês: くるりんイライラ棒; título em inglês: Buzz Wire: Spin Challenge; doravante, &quot;Aplicativo&quot;) e no site em que esta Política é publicada. Esta Política também se aplica às versões do mesmo Aplicativo em outros idiomas.</p>
+<h2>1. Registros do jogo e armazenamento no dispositivo</h2>
+<p>O Aplicativo armazena no dispositivo informações como progresso, estado de desbloqueio, chaves obtidas, tempos de conclusão, registros de LIFE adicionada por meio de anúncios, idioma de exibição, configurações de áudio e registros relacionados a orientações e solicitações de avaliação. O Aplicativo não possui um sistema próprio de contas de usuário nem uma função que envie o progresso aos nossos servidores para sincronização.</p>
+<p>Dependendo das configurações do Android, do sistema operacional e do dispositivo, alguns dados salvos podem ser incluídos no backup padrão do Android ou na transferência entre dispositivos. Não dispomos de uma função que nos permita acessar esses backups. Para informações sobre exclusão e restauração, consulte &quot;6. Exclusão de registros salvos e backups&quot;.</p>
+<h2>2. Tratamento de informações relacionado à veiculação de anúncios</h2>
+<p>O Aplicativo utiliza o software de veiculação de anúncios do Google AdMob (Google Mobile Ads SDK) para exibir anúncios recompensados pela visualização de vídeos e anúncios nas transições entre telas. Dependendo do SDK, das configurações do dispositivo, da região, das suas escolhas e de outros fatores, o Google e as empresas envolvidas na veiculação de anúncios podem coletar, transmitir e utilizar as seguintes informações.</p>
+<ul>
+<li>Endereço IP e localização aproximada inferida a partir do endereço IP</li>
+<li>ID de publicidade, ID do conjunto de apps (App Set ID), identificadores temporários gerados no software de veiculação de anúncios e identificadores semelhantes</li>
+<li>Informações de uso, como inicializações do aplicativo, exibições e toques em anúncios e visualizações de vídeos</li>
+<li>Informações técnicas sobre falhas, diagnósticos e desempenho (como versões do aplicativo, do SDK e do sistema operacional, modelo do dispositivo, estado da conexão e informações de erro)</li>
+</ul>
+<p>Essas informações são utilizadas para fins como veiculação e personalização de anúncios dentro dos limites permitidos para cada identificador, medição e análise da eficácia dos anúncios, manutenção dos serviços e detecção e prevenção de fraudes. O App Set ID não é utilizado para personalizar anúncios nem para medir sua eficácia, e não é associado a identificadores como o ID de publicidade ou a informações pessoais para fins publicitários.</p>
+<p>A transmissão de dados pelo Google Mobile Ads SDK é criptografada (TLS). Consulte também as explicações de cada fornecedor sobre o tratamento de informações pelos serviços externos e seus períodos de retenção.</p>
+<p>A personalização de anúncios depende das configurações do Google e do dispositivo, das suas escolhas e dos requisitos aplicáveis. Mesmo anúncios não personalizados podem envolver o tratamento de informações para fins como controle de frequência, agregação e prevenção de fraudes.</p>
+<p><a href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade do Google</a> / <a href="https://policies.google.com/technologies/partner-sites?hl=pt-BR">Como o Google usa informações de sites ou apps que utilizam seus serviços</a> / <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=pt-BR">Informações sobre os dados do Google Mobile Ads SDK</a></p>
+<h2>3. Configurações de privacidade dos anúncios</h2>
+<p>Se as configurações de privacidade dos anúncios aparecerem na tela de configurações do Aplicativo, você poderá alterar suas escolhas por ali. Quando for necessário solicitar consentimento, utilizamos o sistema do Google User Messaging Platform (UMP).</p>
+<p>Você também pode redefinir ou excluir seu ID de publicidade nas configurações de anúncios do Android, na medida em que essas opções estiverem disponíveis. Essa ação é diferente da exclusão de informações que já foram tratadas. Consulte as explicações do Google sobre o uso de dados e as opções de controle disponíveis.</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=pt-BR">Explicação do Google sobre publicidade e privacidade</a></p>
+<h2>4. Informações recebidas por meio de contatos</h2>
+<p>Se você entrar em contato conosco por e-mail, receberemos seu endereço de e-mail, o nome que informar, o conteúdo da consulta e informações sobre o dispositivo, imagens ou outros dados que fornecer voluntariamente. Utilizamos essas informações para responder, investigar causas e realizar as comunicações necessárias.</p>
+<p>Ao encerrar o atendimento de uma consulta, excluímos os e-mails, anexos e cópias sob nosso controle que deixaram de ser necessários. Mantemos os registros mínimos necessários para explicar nossa resposta ao exercício de direitos, bem como as informações necessárias para cumprir obrigações legais específicas ou proteger direitos, na medida necessária para essas finalidades.</p>
+<h2>5. Serviços externos e tratamento fora do seu país</h2>
+<p>O Aplicativo e os sites relacionados utilizam o Google AdMob e a UMP para anúncios e solicitações de consentimento, o Google Play para distribuição, avaliações e funções relacionadas, backups do sistema operacional, o Gmail para receber e responder a consultas e o GitHub Pages para publicar esta Política. Cada fornecedor trata informações de acordo com as funções utilizadas.</p>
+<p>Nós controlamos a integração e a configuração dos recursos de publicidade no Aplicativo, assim como as finalidades de uso, a retenção, a exclusão e outras formas de tratamento das informações de consultas que recebemos. As explicações de cada fornecedor também se aplicam ao tratamento cujas finalidades e métodos são determinados de forma independente pelo Google ou por outros fornecedores. Recebemos consultas pelo nosso canal de contato sobre o tratamento que determinamos.</p>
+<p>Recebemos consultas no Japão. Serviços como o Google e o GitHub também podem tratar informações fora do seu país ou região de residência. Para informações sobre uso, compartilhamento e retenção nos serviços do Google, consulte as explicações do Google sobre uso e retenção de informações. O gerenciamento dos backups do Android também depende dos serviços utilizados e das configurações do dispositivo.</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=pt-BR">Explicações do Google sobre o uso de informações</a> / <a href="https://policies.google.com/technologies/retention?hl=pt-BR">Explicações do Google sobre retenção de dados</a> / <a href="https://support.google.com/android/answer/2819582?hl=pt-BR">Informações sobre o backup do Android</a></p>
+<h2>6. Exclusão de registros salvos e backups</h2>
+<p>Os registros salvos do jogo permanecem no dispositivo até que os dados sejam redefinidos, excluídos ou que uma ação semelhante seja realizada. Você pode redefinir os registros no dispositivo acessando &quot;Configurações → Apps → Aplicativo → Armazenamento&quot; no Android e selecionando &quot;Limpar armazenamento&quot; ou &quot;Limpar dados&quot;. Os nomes e as etapas variam conforme o dispositivo. Limpar apenas o cache não exclui os registros.</p>
+<p>Limpar os dados do dispositivo é uma ação diferente de excluir backups na nuvem. Os registros podem ser restaurados a partir de um backup do Android, por exemplo, ao reinstalar o Aplicativo após desinstalá-lo. Gerencie os backups nas configurações do Android ou da sua Conta do Google.</p>
+<p>Os períodos de retenção das informações relacionadas à publicidade tratadas de forma independente pelo Google ou por outros fornecedores, assim como dos backups do Android, seguem os termos e as políticas dos respectivos serviços e as suas configurações.</p>
+<h2>7. Consultas sobre informações pessoais</h2>
+<p>Dependendo da legislação aplicável e das condições do tratamento, você pode solicitar medidas como confirmação do tratamento, acesso, correção, exclusão, oposição ao tratamento ou revogação do consentimento. Informe ao nosso <a href="mailto:studio.molymorph+privacy@gmail.com">canal de privacidade</a> a medida desejada e as informações às quais ela se refere.</p>
+<p>Atendemos às solicitações que devemos atender por exigência legal após verificar seu objeto e conteúdo e a forma como tratamos as informações em questão.</p>
+<p>Dependendo da solicitação, podemos verificar sua identidade com o mínimo de informações necessárias. Não é necessário enviar, desde o início, um documento de identidade ou todos os registros do jogo armazenados no dispositivo.</p>
+<p>Não dispomos de um mecanismo para visualizar ou excluir remotamente os registros do jogo armazenados apenas no dispositivo. Para saber como excluir os registros no dispositivo, consulte &quot;6. Exclusão de registros salvos e backups&quot;. Quanto às informações tratadas por serviços externos, verificamos até que ponto podemos atender à solicitação e, quando necessário, também indicamos o canal de contato do fornecedor correspondente.</p>
+<h2>8. Direitos dos usuários no Brasil (LGPD)</h2>
+<p>Na medida prevista na LGPD, você pode solicitar as seguintes medidas.</p>
+<ul>
+<li>Confirmação da existência de tratamento, acesso às informações e correção</li>
+<li>Anonimização, bloqueio ou eliminação de informações desnecessárias, excessivas ou tratadas em desconformidade com a lei</li>
+<li>Portabilidade dos dados e informações sobre os destinatários com os quais os dados são compartilhados</li>
+<li>No caso de tratamento baseado no consentimento, explicação das consequências de não consentir, revogação do consentimento e eliminação, ressalvadas as exceções legais</li>
+<li>Oposição ao tratamento realizado em desconformidade com a lei</li>
+<li>Revisão de decisões tomadas unicamente com base no tratamento automatizado de dados pessoais que afetem seus interesses</li>
+</ul>
+<p>Você também pode apresentar uma reclamação à <a href="https://www.gov.br/anpd/pt-br">Autoridade Nacional de Proteção de Dados do Brasil, ANPD</a>.</p>
+<p>Recebemos solicitações gratuitamente pelo nosso <a href="mailto:studio.molymorph+privacy@gmail.com">canal de privacidade</a>. Respondemos dentro dos prazos estabelecidos pela legislação e pelos demais requisitos aplicáveis. Se não pudermos adotar imediatamente a medida solicitada, explicaremos os motivos e as providências possíveis.</p>
+<h2>9. Medidas de segurança</h2>
+<p>Buscamos proteger as informações, inclusive limitando o acesso às informações que tratamos ao que for necessário. Este site é disponibilizado por HTTPS. Mesmo com essas medidas, pode não ser possível impedir completamente os efeitos decorrentes da segurança dos dispositivos e das contas ou das condições de comunicação.</p>
+<h2>10. Faixa etária</h2>
+<p>O Aplicativo é destinado a pessoas com 18 anos ou mais. Entre em contato conosco se tiver preocupações sobre o tratamento de informações de crianças ou menores de idade. Se um problema for confirmado, adotaremos as medidas necessárias de acordo com as circunstâncias.</p>
+<h2>11. Site em que esta Política é publicada</h2>
+<p>Este site é publicado no GitHub Pages. O GitHub registra e armazena os endereços IP dos visitantes para fins como manter a segurança do site. Não instalamos ferramentas próprias de análise de acesso nem tags de publicidade neste site.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Declaração de privacidade do GitHub</a></p>
+<h2>12. Alterações desta Política</h2>
+<p>Podemos atualizar esta Política em razão de alterações nas funções do Aplicativo, na legislação ou em outras circunstâncias. Publicamos o conteúdo revisado e a data da atualização nesta página e fornecemos avisos adicionais ou solicitamos consentimento quando exigido por lei.</p>
+<div class="policy-contact" id="pt-BR-contact">
+<h2>Responsável pela operação e contato</h2>
+<p>Responsável pela operação: Molymorph (operação individual no Japão)</p>
+<p>Contato: <a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
+<section id="fr-FR" lang="fr-FR" data-policy-language="fr-FR" aria-labelledby="policy-title">
+<p class="document-date">Date d’adoption : 16 octobre 2026 / Dernière mise à jour : 31 octobre 2026</p>
+<p>Molymorph (ci-après « nous ») décrit ci-dessous la manière dont les informations sont traitées dans l’application Android « くるりんイライラ棒 » (nom anglais : Buzz Wire: Spin Challenge, ci-après « l’Application ») et sur le site où la présente politique est publiée. Cette politique s’applique également aux autres versions linguistiques de la même application.</p>
+<h2>1. Données de jeu et stockage sur l’appareil</h2>
+<p>L’Application enregistre sur l’appareil des données telles que la progression, les éléments débloqués, les clés obtenues, les temps de réussite, les ajouts de LIFE obtenus par la publicité, la langue d’affichage, les paramètres audio et les informations relatives aux messages d’information et aux demandes d’avis. L’Application ne dispose pas de comptes utilisateurs propres ni de fonction permettant de transmettre votre progression à nos serveurs pour la synchroniser.</p>
+<p>Selon les paramètres Android, le système d’exploitation et l’appareil, certaines données enregistrées peuvent être incluses dans la sauvegarde standard d’Android ou le transfert entre appareils. Nous ne disposons d’aucune fonction permettant d’accéder à ces sauvegardes. Pour leur suppression ou leur restauration, consultez la section « 6. Suppression des données enregistrées et sauvegardes ».</p>
+<h2>2. Traitement des informations lié à la diffusion de publicités</h2>
+<p>L’Application utilise le logiciel de diffusion publicitaire de Google AdMob (Google Mobile Ads SDK) pour afficher des publicités vidéo avec récompense et des publicités lors des changements d’écran. Google et les entreprises intervenant dans la diffusion publicitaire peuvent collecter, transmettre et utiliser les informations suivantes, selon le SDK, les paramètres de l’appareil, la région, les choix de l’utilisateur et d’autres facteurs.</p>
+<ul>
+<li>L’adresse IP et la zone géographique approximative estimée à partir de celle-ci</li>
+<li>L’identifiant publicitaire, l’identifiant d’ensemble d’applications (App Set ID), les identifiants temporaires générés dans le logiciel de diffusion publicitaire, etc.</li>
+<li>Les informations d’utilisation, telles que les lancements de l’application, les affichages et les clics sur les publicités, ainsi que les visionnages de vidéos</li>
+<li>Les informations techniques relatives aux dysfonctionnements, aux diagnostics et aux performances de traitement (versions de l’application, du SDK et du système d’exploitation, modèle de l’appareil, état de la connexion, informations sur les erreurs, etc.)</li>
+</ul>
+<p>Ces informations servent notamment à la diffusion et à la personnalisation des publicités dans les limites autorisées pour chaque identifiant, à la mesure et à l’analyse de l’efficacité publicitaire, au maintien des services ainsi qu’à la détection et à la prévention des fraudes. L’App Set ID n’est utilisé ni pour la personnalisation des publicités ni pour la mesure de leur efficacité et n’est pas associé à des identifiants tels que l’identifiant publicitaire ou à des informations personnelles à des fins publicitaires.</p>
+<p>Les données transmises par Google Mobile Ads SDK sont chiffrées (TLS). Pour le traitement et les durées de conservation appliqués par les services externes, consultez également les explications de chaque fournisseur.</p>
+<p>La personnalisation des publicités dépend notamment des paramètres de Google et de l’appareil, des choix de l’utilisateur et des exigences applicables. Même pour les publicités non personnalisées, des informations peuvent être traitées pour limiter le nombre d’affichages, établir des statistiques agrégées ou prévenir les fraudes.</p>
+<p><a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a> ／ <a href="https://policies.google.com/technologies/partner-sites?hl=fr">Utilisation par Google des informations collectées sur les sites et applications qui utilisent ses services</a> ／ <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=fr">Explications sur les données de Google Mobile Ads SDK</a></p>
+<h2>3. Paramètres de confidentialité publicitaire</h2>
+<p>Si des paramètres de confidentialité publicitaire sont affichés dans les paramètres de l’Application, vous pouvez y modifier vos choix. Lorsqu’il est nécessaire de recueillir votre consentement, nous utilisons le dispositif de Google (User Messaging Platform, UMP).</p>
+<p>Les paramètres publicitaires d’Android permettent également, dans la mesure où ces options sont disponibles, de réinitialiser ou de supprimer l’identifiant publicitaire. Cette opération est distincte de la suppression des informations déjà traitées. Pour connaître l’utilisation des données par Google et les moyens de contrôle disponibles, consultez les explications de Google.</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=fr">Explications de Google sur la publicité et la confidentialité</a></p>
+<h2>4. Informations reçues lorsque vous nous contactez</h2>
+<p>Si vous nous contactez par e-mail, nous recevons votre adresse e-mail, le nom indiqué dans le message, le contenu de votre demande et les informations sur l’appareil, les images ou d’autres éléments que vous fournissez volontairement. Nous les utilisons pour répondre à votre demande, rechercher la cause d’un problème et vous contacter lorsque cela est nécessaire.</p>
+<p>Parmi les e-mails de demande, les pièces jointes et les copies que nous gérons, nous supprimons ceux qui ne sont plus nécessaires lorsque le traitement de la demande est terminé. Nous conservons les traces minimales permettant d’expliquer la manière dont nous avons répondu aux demandes d’exercice des droits, ainsi que les informations nécessaires à des obligations légales précises ou à la protection de droits, dans la mesure nécessaire à ces finalités.</p>
+<h2>5. Services externes et traitement à l’étranger</h2>
+<p>L’Application et les sites associés utilisent Google AdMob et UMP pour la publicité et le recueil du consentement, Google Play pour la distribution, les avis et d’autres fonctions, les sauvegardes du système d’exploitation, Gmail pour la réception et le traitement des demandes, ainsi que GitHub Pages pour la publication de la politique. Chaque fournisseur traite des informations en fonction des fonctionnalités utilisées.</p>
+<p>Nous gérons l’intégration et la configuration des fonctions publicitaires de l’Application, ainsi que les finalités d’utilisation, la conservation, la suppression et les autres aspects du traitement des informations reçues dans le cadre des demandes. Les explications de chaque fournisseur s’appliquent également aux traitements pour lesquels Google ou d’autres fournisseurs déterminent indépendamment les finalités et les moyens. Vous pouvez contacter notre point de contact au sujet des traitements que nous déterminons.</p>
+<p>Nous recevons les demandes au Japon. Des services tels que Google et GitHub peuvent également traiter des informations dans d’autres pays ou régions que votre lieu de résidence. Pour l’utilisation, le partage et la conservation des informations dans les services Google, consultez les explications de Google sur l’utilisation et la conservation des informations. La gestion des sauvegardes Android dépend également des services utilisés et des paramètres de l’appareil.</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=fr">Explications sur l’utilisation des informations par Google</a> ／ <a href="https://policies.google.com/technologies/retention?hl=fr">Explications sur la conservation des données par Google</a> ／ <a href="https://support.google.com/android/answer/2819582?hl=fr">Explications sur les sauvegardes Android</a></p>
+<h2>6. Suppression des données enregistrées et sauvegardes</h2>
+<p>Les données de jeu enregistrées restent sur l’appareil jusqu’à leur réinitialisation, leur suppression ou une opération similaire. Vous pouvez réinitialiser ces données dans Android en ouvrant « Paramètres → Applications → l’Application → Stockage », puis en sélectionnant « Effacer le stockage » ou « Effacer les données ». Les libellés et les étapes varient selon l’appareil. Vider uniquement le cache ne supprime pas ces données.</p>
+<p>La suppression des données sur l’appareil est distincte de la suppression des sauvegardes dans le cloud. Les données peuvent être restaurées à partir d’une sauvegarde Android, notamment lorsque vous réinstallez l’Application après l’avoir désinstallée. Gérez les sauvegardes dans les paramètres Android ou ceux de votre compte Google.</p>
+<p>Les durées de conservation des informations publicitaires et des sauvegardes Android traitées indépendamment par Google ou d’autres fournisseurs dépendent des conditions, des politiques de chaque service et des paramètres de l’utilisateur.</p>
+<h2>7. Demandes relatives aux informations personnelles</h2>
+<p>Selon les lois applicables et les conditions du traitement, vous pouvez notamment demander la vérification, l’accès, la rectification ou la suppression d’informations, vous opposer au traitement ou retirer votre consentement. Indiquez au <a href="mailto:studio.molymorph+privacy@gmail.com">point de contact pour la confidentialité</a> la mesure souhaitée et les informations concernées.</p>
+<p>Nous donnons suite aux demandes auxquelles la loi nous impose de répondre après avoir vérifié leur objet, leur contenu et la manière dont nous traitons les informations concernées.</p>
+<p>Selon le contenu de la demande, nous pouvons vérifier votre identité à l’aide du minimum d’informations nécessaire. Vous n’avez pas besoin d’envoyer d’emblée une pièce d’identité ou l’intégralité des données de jeu enregistrées sur votre appareil.</p>
+<p>Nous ne disposons pas de dispositif permettant de consulter ou de supprimer à distance les données de jeu enregistrées uniquement sur l’appareil. Pour savoir comment les effacer, consultez la section « 6. Suppression des données enregistrées et sauvegardes ». Pour les informations traitées par des services externes, nous vérifions dans quelle mesure nous pouvons intervenir et, si nécessaire, vous indiquons également le point de contact du fournisseur concerné.</p>
+<h2>8. Droits des utilisateurs au Brésil (LGPD)</h2>
+<p>Dans les limites prévues par la LGPD, vous pouvez demander les mesures suivantes.</p>
+<ul>
+<li>La confirmation de l’existence d’un traitement, l’accès aux informations et leur rectification</li>
+<li>L’anonymisation, la suspension du traitement ou la suppression des informations inutiles, excessives ou traitées en violation de la loi</li>
+<li>La portabilité des données et des explications sur leurs destinataires</li>
+<li>Pour les traitements fondés sur le consentement : des explications sur les conséquences d’un refus de consentir, le retrait du consentement et la suppression des données, sous réserve des exceptions légales</li>
+<li>L’opposition à un traitement contraire à la loi</li>
+<li>Le réexamen des décisions fondées exclusivement sur un traitement automatisé de données personnelles et ayant des effets sur vos intérêts</li>
+</ul>
+<p>Vous pouvez également déposer une réclamation auprès de <a href="https://www.gov.br/anpd/pt-br">l’ANPD, l’autorité brésilienne de protection des données</a>.</p>
+<p>Nous recevons gratuitement vos demandes au <a href="mailto:studio.molymorph+privacy@gmail.com">point de contact pour la confidentialité</a>. Nous y donnons suite dans les délais prévus par les dispositions légales et les autres règles applicables. Si nous ne pouvons pas prendre immédiatement la mesure souhaitée, nous vous en expliquons la raison et les réponses possibles.</p>
+<h2>9. Sécurité</h2>
+<p>Nous nous efforçons de protéger les informations traitées, notamment en limitant leur accès à ce qui est nécessaire. Ce site est fourni via HTTPS. Même avec ces mesures, il n’est pas toujours possible de prévenir entièrement les effets liés à la sécurité des appareils et des comptes ou à l’environnement de communication.</p>
+<h2>10. Âge du public visé</h2>
+<p>L’Application est destinée aux personnes de 18 ans et plus. Si vous avez des préoccupations concernant le traitement des informations d’enfants ou de mineurs, contactez-nous. Si un problème est confirmé, nous prendrons les mesures nécessaires en fonction de la situation.</p>
+<h2>11. Site de publication de la présente politique</h2>
+<p>Ce site est publié sur GitHub Pages. GitHub enregistre et conserve les adresses IP des visiteurs, notamment pour assurer la sécurité du site. Nous n’installons sur ce site aucun outil d’analyse d’audience ni aucune balise publicitaire qui nous soit propre.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Explications de GitHub sur la confidentialité</a></p>
+<h2>12. Modifications de la politique</h2>
+<p>Nous pouvons mettre à jour la présente politique en fonction de modifications des fonctionnalités de l’Application, de la législation ou d’autres éléments. Le contenu modifié et la date de mise à jour seront publiés sur cette page. Lorsque la loi l’exige, nous effectuerons une notification supplémentaire ou recueillerons à nouveau le consentement.</p>
+<div class="policy-contact" id="fr-FR-contact">
+<h2>Exploitant et contact</h2>
+<p>Exploitant : Molymorph (activité exercée à titre individuel au Japon)</p>
+<p>Contact : <a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
+<section id="de-DE" lang="de-DE" data-policy-language="de-DE" aria-labelledby="policy-title">
+<p class="document-date">Gültig ab: 16. Oktober 2026 / Zuletzt aktualisiert: 31. Oktober 2026</p>
+<p>Molymorph (im Folgenden „wir“) erläutert in dieser Erklärung den Umgang mit Informationen in der Android-App „Heißer Draht: Dreh-Challenge“ (japanischer Titel: くるりんイライラ棒; englischer Titel: Buzz Wire: Spin Challenge; im Folgenden „App“) und auf der Website, auf der diese Erklärung veröffentlicht wird. Sie gilt auch für die anderen Sprachversionen derselben App.</p>
+<h2>1. Spielstände und lokale Speicherung</h2>
+<p>Die App speichert unter anderem Fortschritt, Freischaltungen, erhaltene Schlüssel, Abschlusszeiten, Aufzeichnungen über zusätzliche LIFE durch Werbung, Sprach- und Audioeinstellungen sowie Aufzeichnungen zu Hinweisen und Bewertungsanfragen auf Ihrem Gerät. Die App bietet weder eigene Nutzerkonten noch eine Funktion, die den Spielfortschritt zur Synchronisierung an einen unserer Server sendet.</p>
+<p>Je nach Android-Einstellungen, Betriebssystem und Gerät können einige gespeicherte Daten in die standardmäßige Android-Sicherung oder die Übertragung zwischen Geräten einbezogen werden. Wir haben keine Funktion, mit der wir auf diese Sicherungen zugreifen können. Informationen zum Löschen und Wiederherstellen finden Sie unter „6. Löschen gespeicherter Daten und Sicherungen“.</p>
+<h2>2. Informationen im Zusammenhang mit Werbung</h2>
+<p>Die App verwendet die Werbesoftware von Google AdMob (Google Mobile Ads SDK), um Werbung mit Belohnungen für das Ansehen von Videos sowie Werbung bei Bildschirmwechseln anzuzeigen. Google und an der Werbeauslieferung beteiligte Anbieter können je nach SDK, Geräteeinstellungen, Region, Ihren Entscheidungen und weiteren Umständen die folgenden Informationen erheben, übertragen und verwenden:</p>
+<ul>
+<li>IP-Adresse und die daraus abgeleitete ungefähre Region</li>
+<li>Werbe-ID, App-Set-ID und vorübergehende Kennungen, die innerhalb der Werbesoftware erzeugt werden</li>
+<li>Nutzungsinformationen wie App-Starts, Werbeeinblendungen, Tippen auf Werbung und Videoaufrufe</li>
+<li>Technische Informationen zu Fehlern, Diagnosen und Leistung, etwa App-, SDK- und Betriebssystemversionen, Gerätemodell, Verbindungsstatus und Fehlerinformationen</li>
+</ul>
+<p>Diese Informationen werden im für die jeweilige Kennung zulässigen Umfang unter anderem zur Auslieferung und Personalisierung von Werbung, zur Messung und Analyse der Werbewirkung, zur Aufrechterhaltung der Dienste sowie zur Erkennung und Verhinderung von Betrug verwendet. Die App-Set-ID wird weder zur Personalisierung von Werbung noch zur Messung der Werbewirkung verwendet und nicht zu Werbezwecken mit Kennungen wie der Werbe-ID oder mit personenbezogenen Daten verknüpft.</p>
+<p>Die Datenübertragung durch das Google Mobile Ads SDK erfolgt verschlüsselt (TLS). Bitte beachten Sie auch die Erläuterungen der jeweiligen Anbieter zum Umgang mit Informationen und zu deren Aufbewahrung.</p>
+<p>Die Personalisierung von Werbung hängt unter anderem von den Einstellungen bei Google und auf Ihrem Gerät, Ihren Entscheidungen und den geltenden Anforderungen ab. Auch bei nicht personalisierter Werbung können Informationen beispielsweise zur Begrenzung der Einblendungshäufigkeit, zur Erstellung zusammengefasster Auswertungen und zur Betrugsprävention verarbeitet werden.</p>
+<p><a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a> ／ <a href="https://policies.google.com/technologies/partner-sites?hl=de">So verwendet Google Informationen von Websites und Apps, die Google-Dienste nutzen</a> ／ <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=de">Informationen zu den Daten des Google Mobile Ads SDK</a></p>
+<h2>3. Datenschutzeinstellungen für Werbung</h2>
+<p>Wenn in den Einstellungen der App Datenschutzeinstellungen für Werbung angezeigt werden, können Sie dort Ihre Auswahl ändern. Ist eine Einwilligungsabfrage erforderlich, verwenden wir dafür die User Messaging Platform (UMP) von Google.</p>
+<p>Je nach verfügbaren Funktionen können Sie die Werbe-ID auch in den Android-Werbeeinstellungen zurücksetzen oder löschen. Dieser Vorgang ist vom Löschen bereits verarbeiteter Informationen zu unterscheiden. Hinweise zur Datennutzung durch Google und zu den verfügbaren Verwaltungsmöglichkeiten finden Sie in den Erläuterungen von Google.</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=de">Informationen von Google zu Werbung und Datenschutz</a></p>
+<h2>4. Informationen aus Supportanfragen</h2>
+<p>Wenn Sie uns per E-Mail kontaktieren, erhalten wir Ihre E-Mail-Adresse, einen von Ihnen angegebenen Namen, den Inhalt Ihrer Anfrage sowie freiwillig bereitgestellte Geräteinformationen, Bilder oder ähnliche Angaben. Wir verwenden diese Informationen zur Bearbeitung Ihrer Anfrage, zur Untersuchung von Problemen und für die erforderliche Kommunikation.</p>
+<p>Von uns verwaltete E-Mails, Anhänge und Kopien löschen wir nach Abschluss der Bearbeitung, soweit sie nicht mehr benötigt werden. Minimale Aufzeichnungen, die zum Nachweis der Bearbeitung von Betroffenenrechten erforderlich sind, sowie Informationen, die zur Erfüllung konkreter gesetzlicher Pflichten oder zum Schutz von Rechten benötigt werden, bewahren wir nur im für diese Zwecke erforderlichen Umfang auf.</p>
+<h2>5. Externe Dienste und Verarbeitung im Ausland</h2>
+<p>Für die App und zugehörige Websites verwenden wir Google AdMob und UMP für Werbung und Einwilligungsabfragen, Google Play für die Bereitstellung der App und Bewertungen, die Sicherungsfunktionen des Betriebssystems, Gmail für den Empfang und die Bearbeitung von Anfragen sowie GitHub Pages für die Veröffentlichung dieser Erklärung. Die jeweiligen Anbieter verarbeiten Informationen entsprechend den genutzten Funktionen.</p>
+<p>Wir verwalten die Einbindung und Konfiguration der Werbefunktionen in der App sowie unter anderem die Zwecke der Nutzung, Aufbewahrung und Löschung der bei uns eingehenden Anfrageinformationen. Für Verarbeitungsvorgänge, bei denen Google oder andere Anbieter Zwecke und Mittel selbst bestimmen, gelten auch die Erläuterungen dieser Anbieter. Anfragen zu der von uns bestimmten Verarbeitung nehmen wir über unsere Kontaktstelle entgegen.</p>
+<p>Wir empfangen Anfragen in Japan. Auch Dienste wie Google und GitHub können Informationen außerhalb Ihres Wohnsitzlandes oder Ihrer Wohnsitzregion verarbeiten. Hinweise zur Nutzung, Weitergabe und Aufbewahrung in Google-Diensten finden Sie in den Erläuterungen von Google. Die Verwaltung von Android-Sicherungen hängt auch von den verwendeten Diensten und Geräteeinstellungen ab.</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=de">Erläuterungen zur Datennutzung durch Google</a> ／ <a href="https://policies.google.com/technologies/retention?hl=de">Erläuterungen zur Datenaufbewahrung bei Google</a> ／ <a href="https://support.google.com/android/answer/2819582?hl=de">Informationen zur Android-Sicherung</a></p>
+<h2>6. Löschen gespeicherter Daten und Sicherungen</h2>
+<p>Gespeicherte Spielaufzeichnungen bleiben auf Ihrem Gerät, bis Sie die Daten zurücksetzen oder löschen. Über „Android-Einstellungen → Apps → diese App → Speicher“ können Sie mit „Speicherinhalt löschen“ oder „Daten löschen“ die lokalen Aufzeichnungen zurücksetzen. Bezeichnungen und Schritte unterscheiden sich je nach Gerät. Das Leeren des Caches allein löscht die Aufzeichnungen nicht.</p>
+<p>Das Löschen lokaler Daten und das Löschen einer Cloud-Sicherung sind unterschiedliche Vorgänge. Beispielsweise kann Android bei einer erneuten Installation nach der Deinstallation Aufzeichnungen aus einer Sicherung wiederherstellen. Verwalten Sie Sicherungen über die Einstellungen von Android oder Ihres Google-Kontos.</p>
+<p>Für die Aufbewahrung werbebezogener Informationen, die Google oder andere Anbieter eigenständig verarbeiten, sowie für Android-Sicherungen gelten die Bedingungen und Richtlinien der jeweiligen Dienste und Ihre Einstellungen.</p>
+<h2>7. Anfragen zu personenbezogenen Daten</h2>
+<p>Je nach geltendem Recht und den Bedingungen der Verarbeitung können Sie unter anderem Auskunft, Zugang, Berichtigung, Löschung, Widerspruch gegen die Verarbeitung oder den Widerruf einer Einwilligung verlangen. Teilen Sie der <a href="mailto:studio.molymorph+privacy@gmail.com">Datenschutzkontaktstelle</a> bitte mit, welche Maßnahme Sie wünschen und welche Informationen betroffen sind.</p>
+<p>Gesetzlich erforderlichen Ersuchen kommen wir nach, nachdem wir deren Gegenstand und Inhalt sowie unsere Verarbeitung der betreffenden Informationen geprüft haben.</p>
+<p>Je nach Anfrage können wir Ihre Identität anhand der dafür mindestens erforderlichen Informationen prüfen. Sie müssen nicht von sich aus Ausweisdokumente oder sämtliche auf Ihrem Gerät gespeicherten Spielaufzeichnungen einsenden.</p>
+<p>Wir haben keine Funktion, um ausschließlich auf Ihrem Gerät gespeicherte Spielaufzeichnungen aus der Ferne einzusehen oder zu löschen. Wie Sie lokale Aufzeichnungen löschen können, erfahren Sie unter „6. Löschen gespeicherter Daten und Sicherungen“. Bei Informationen, die externe Dienste verarbeiten, prüfen wir unseren Handlungsspielraum und nennen Ihnen bei Bedarf auch die Kontaktstelle des zuständigen Anbieters.</p>
+<h2>8. Rechte von Nutzern in Brasilien (LGPD)</h2>
+<p>Im Rahmen der LGPD können Sie folgende Maßnahmen verlangen:</p>
+<ul>
+<li>Bestätigung, ob Daten verarbeitet werden, Zugang zu den Informationen und Berichtigung</li>
+<li>Anonymisierung, Sperrung oder Löschung unnötiger, übermäßiger oder rechtswidrig verarbeiteter Informationen</li>
+<li>Datenübertragbarkeit und Informationen über Empfänger</li>
+<li>Bei einer auf Einwilligung beruhenden Verarbeitung: Informationen über die Folgen einer verweigerten Einwilligung, Widerruf der Einwilligung und Löschung unter Beachtung gesetzlicher Ausnahmen</li>
+<li>Widerspruch gegen eine rechtswidrige Verarbeitung</li>
+<li>Überprüfung von Entscheidungen, die ausschließlich auf automatisierter Verarbeitung personenbezogener Daten beruhen und Ihre Interessen berühren</li>
+</ul>
+<p>Sie können sich auch an die <a href="https://www.gov.br/anpd/pt-br">brasilianische Datenschutzbehörde ANPD</a> wenden.</p>
+<p>Anfragen nehmen wir über die <a href="mailto:studio.molymorph+privacy@gmail.com">Datenschutzkontaktstelle</a> kostenlos entgegen. Wir bearbeiten sie innerhalb der nach den geltenden Gesetzen und sonstigen anwendbaren Vorgaben festgelegten Fristen. Können wir die gewünschte Maßnahme nicht unmittelbar durchführen, erläutern wir die Gründe und die verfügbaren Möglichkeiten.</p>
+<h2>9. Sicherheitsmaßnahmen</h2>
+<p>Wir bemühen uns um den Schutz der verarbeiteten Informationen, indem wir beispielsweise den Zugriff auf das erforderliche Maß beschränken. Diese Website wird über HTTPS bereitgestellt. Auch mit diesen Maßnahmen lassen sich Auswirkungen der Sicherheit Ihres Geräts oder Kontos sowie Ihrer Netzwerkumgebung nicht vollständig verhindern.</p>
+<h2>10. Zielgruppe</h2>
+<p>Die App richtet sich an Personen ab 18 Jahren. Bitte kontaktieren Sie uns, wenn Sie Bedenken zum Umgang mit Informationen von Kindern oder Minderjährigen haben. Wird ein Problem festgestellt, ergreifen wir die nach den Umständen erforderlichen Maßnahmen.</p>
+<h2>11. Website mit dieser Datenschutzerklärung</h2>
+<p>Diese Website wird über GitHub Pages veröffentlicht. GitHub protokolliert und speichert die IP-Adressen von Besuchern unter anderem zur Gewährleistung der Sicherheit der Website. Wir haben auf dieser Website keine eigenen Analysewerkzeuge oder Werbe-Tags eingerichtet.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzhinweise von GitHub</a></p>
+<h2>12. Änderungen dieser Erklärung</h2>
+<p>Wir können diese Erklärung beispielsweise aufgrund von Änderungen der App-Funktionen oder gesetzlicher Vorgaben aktualisieren. Die geänderte Fassung und das Aktualisierungsdatum werden auf dieser Seite veröffentlicht. Soweit gesetzlich erforderlich, informieren wir zusätzlich oder bitten um eine Einwilligung.</p>
+<div class="policy-contact" id="de-DE-contact">
+<h2>Betreiber und Kontakt</h2>
+<p>Betreiber: Molymorph (von einer Privatperson in Japan betrieben)</p>
+<p>Kontakt: <a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
+<section id="it-IT" lang="it-IT" data-policy-language="it-IT" aria-labelledby="policy-title">
+<p class="document-date">Data di entrata in vigore: 16 ottobre 2026 / Ultimo aggiornamento: 31 ottobre 2026</p>
+<p>Molymorph (di seguito “noi”) illustra nella presente informativa il trattamento delle informazioni nell’app Android “Mano Ferma: Sfida Rotante” (titolo giapponese: くるりんイライラ棒; titolo inglese: Buzz Wire: Spin Challenge; di seguito “App”) e nel sito che ospita questa informativa. L’informativa si applica anche alle altre versioni linguistiche della stessa App.</p>
+<h2>1. Dati di gioco e archiviazione locale</h2>
+<p>L’App salva sul dispositivo informazioni quali progressi, sblocchi, chiavi ottenute, tempi di completamento, registrazioni dei LIFE aggiuntivi ottenuti tramite annunci, impostazioni di lingua e audio e registrazioni relative a suggerimenti e richieste di recensione. L’App non offre account utente propri né una funzione che invii i progressi di gioco a un nostro server per sincronizzarli.</p>
+<p>A seconda delle impostazioni Android, del sistema operativo e del dispositivo, alcuni dati salvati possono essere inclusi nel backup standard di Android o nel trasferimento tra dispositivi. Non disponiamo di una funzione per accedere a tali backup. Per l’eliminazione e il ripristino, consultare “6. Eliminazione dei dati salvati e backup”.</p>
+<h2>2. Informazioni associate agli annunci</h2>
+<p>L’App utilizza il software pubblicitario di Google AdMob (Google Mobile Ads SDK) per mostrare annunci con premi per la visualizzazione di video e annunci durante il passaggio tra schermate. Google e i fornitori coinvolti nella pubblicazione degli annunci possono raccogliere, trasmettere e utilizzare le seguenti informazioni, in base all’SDK, alle impostazioni del dispositivo, alla regione, alle scelte dell’utente e ad altre condizioni:</p>
+<ul>
+<li>Indirizzo IP e area geografica approssimativa dedotta da esso</li>
+<li>ID pubblicità, ID set di app e identificatori temporanei generati all’interno del software pubblicitario</li>
+<li>Informazioni sull’utilizzo, come avvii dell’App, visualizzazioni e tocchi sugli annunci e visualizzazioni di video</li>
+<li>Informazioni tecniche su errori, diagnostica e prestazioni, quali versioni dell’App, dell’SDK e del sistema operativo, modello del dispositivo, stato della connessione e informazioni sugli errori</li>
+</ul>
+<p>Queste informazioni vengono utilizzate, nei limiti consentiti per ciascun identificatore, per finalità quali pubblicazione e personalizzazione degli annunci, misurazione e analisi della loro efficacia, mantenimento dei servizi e rilevamento e prevenzione delle frodi. L’ID set di app non viene utilizzato per la personalizzazione degli annunci o la misurazione della loro efficacia, né collegato per finalità pubblicitarie a identificatori come l’ID pubblicità o a dati personali.</p>
+<p>La trasmissione dei dati tramite Google Mobile Ads SDK è crittografata (TLS). Per il trattamento e la conservazione delle informazioni da parte dei servizi esterni, consultare anche le spiegazioni dei rispettivi fornitori.</p>
+<p>La personalizzazione degli annunci dipende dalle impostazioni di Google e del dispositivo, dalle scelte dell’utente e dai requisiti applicabili. Anche gli annunci non personalizzati possono comportare il trattamento di informazioni, ad esempio per limitare la frequenza di visualizzazione, produrre dati aggregati e prevenire le frodi.</p>
+<p><a href="https://policies.google.com/privacy?hl=it">Norme sulla privacy di Google</a> ／ <a href="https://policies.google.com/technologies/partner-sites?hl=it">Come Google utilizza le informazioni provenienti da siti o app che usano i suoi servizi</a> ／ <a href="https://developers.google.com/admob/unity/privacy/play-data-disclosure?hl=it">Informazioni sui dati di Google Mobile Ads SDK</a></p>
+<h2>3. Impostazioni sulla privacy degli annunci</h2>
+<p>Quando nelle impostazioni dell’App è disponibile una voce relativa alla privacy degli annunci, è possibile usarla per modificare le proprie scelte. Quando è necessario richiedere il consenso, utilizziamo il sistema di Google User Messaging Platform (UMP).</p>
+<p>Le impostazioni pubblicitarie di Android possono inoltre consentire di reimpostare o eliminare l’ID pubblicità, nei limiti delle funzioni disponibili. Questa operazione è distinta dall’eliminazione di informazioni già trattate. Per l’utilizzo dei dati da parte di Google e le opzioni di gestione disponibili, consultare le spiegazioni di Google.</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=it">Informazioni di Google su pubblicità e privacy</a></p>
+<h2>4. Informazioni ricevute nelle richieste di assistenza</h2>
+<p>Se ci contattate via e-mail, riceviamo il vostro indirizzo e-mail, il nome eventualmente indicato, il contenuto della richiesta e informazioni sul dispositivo, immagini o altri dati forniti volontariamente. Utilizziamo queste informazioni per rispondere, indagare sulle cause dei problemi ed effettuare le comunicazioni necessarie.</p>
+<p>Al termine della gestione di una richiesta, eliminiamo le e-mail, gli allegati e le copie sotto il nostro controllo che non sono più necessari. Conserviamo, nella misura necessaria alle rispettive finalità, solo le registrazioni minime richieste per documentare la gestione dei diritti degli interessati e le informazioni necessarie per adempiere a specifici obblighi di legge o tutelare diritti.</p>
+<h2>5. Servizi esterni e trattamento all’estero</h2>
+<p>Nell’App e nei siti correlati utilizziamo Google AdMob e UMP per gli annunci e le richieste di consenso, Google Play per la distribuzione e le recensioni, le funzioni di backup del sistema operativo, Gmail per ricevere e gestire le richieste e GitHub Pages per pubblicare questa informativa. I rispettivi fornitori trattano le informazioni in base alle funzioni utilizzate.</p>
+<p>Gestiamo l’integrazione e la configurazione delle funzioni pubblicitarie nell’App e, tra l’altro, le finalità di utilizzo, la conservazione e l’eliminazione delle informazioni ricevute nelle richieste di assistenza. Per i trattamenti di cui Google o altri fornitori determinano autonomamente finalità e modalità, si applicano anche le spiegazioni di tali fornitori. Le richieste relative ai trattamenti che determiniamo noi possono essere inviate al nostro recapito.</p>
+<p>Riceviamo le richieste in Giappone. Anche servizi come Google e GitHub possono trattare informazioni al di fuori del vostro Paese o della vostra regione di residenza. Per l’utilizzo, la condivisione e la conservazione nei servizi Google, consultare le spiegazioni di Google. La gestione dei backup Android dipende anche dai servizi utilizzati e dalle impostazioni del dispositivo.</p>
+<p><a href="https://policies.google.com/technologies/partner-sites?hl=it">Spiegazioni sull’utilizzo delle informazioni da parte di Google</a> ／ <a href="https://policies.google.com/technologies/retention?hl=it">Spiegazioni sulla conservazione dei dati di Google</a> ／ <a href="https://support.google.com/android/answer/2819582?hl=it">Informazioni sul backup Android</a></p>
+<h2>6. Eliminazione dei dati salvati e backup</h2>
+<p>I dati di gioco salvati restano sul dispositivo finché non vengono reimpostati o eliminati. Per reimpostare i dati locali, aprire “Impostazioni Android → App → questa App → Spazio di archiviazione” e selezionare “Cancella spazio di archiviazione” o “Cancella dati”. I nomi e i passaggi variano a seconda del dispositivo. La sola cancellazione della cache non elimina i dati salvati.</p>
+<p>L’eliminazione dei dati locali e quella dei backup nel cloud sono operazioni distinte. Ad esempio, Android può ripristinare i dati da un backup quando si reinstalla l’App dopo averla disinstallata. Gestire i backup nelle impostazioni Android o dell’Account Google.</p>
+<p>Per i tempi di conservazione delle informazioni pubblicitarie trattate autonomamente da Google o da altri fornitori e dei backup Android, si applicano i termini e le norme dei rispettivi servizi e le impostazioni dell’utente.</p>
+<h2>7. Richieste relative ai dati personali</h2>
+<p>In base alla legge applicabile e alle condizioni del trattamento, potete richiedere, tra l’altro, informazioni, accesso, rettifica, eliminazione, opposizione al trattamento o revoca del consenso. Indicate al <a href="mailto:studio.molymorph+privacy@gmail.com">recapito per la privacy</a> l’intervento desiderato e le informazioni interessate.</p>
+<p>Rispondiamo alle richieste per le quali la legge impone un intervento dopo averne verificato l’oggetto e il contenuto, nonché il trattamento delle informazioni da parte nostra.</p>
+<p>A seconda della richiesta, potremmo verificare la vostra identità utilizzando le informazioni minime necessarie. Non è necessario inviare fin dall’inizio documenti di identità o l’intero archivio dei dati di gioco salvati sul dispositivo.</p>
+<p>Non disponiamo di una funzione per consultare o eliminare da remoto i dati di gioco conservati esclusivamente sul vostro dispositivo. Per cancellare i dati locali, consultare “6. Eliminazione dei dati salvati e backup”. Per le informazioni trattate da servizi esterni, verificheremo quali interventi possiamo effettuare e, se necessario, indicheremo anche il recapito del fornitore competente.</p>
+<h2>8. Diritti degli utenti in Brasile (LGPD)</h2>
+<p>Nei limiti previsti dalla LGPD, potete richiedere quanto segue:</p>
+<ul>
+<li>Conferma dell’esistenza di un trattamento, accesso alle informazioni e rettifica</li>
+<li>Anonimizzazione, blocco o eliminazione di informazioni non necessarie, eccessive o trattate in violazione della legge</li>
+<li>Portabilità dei dati e informazioni sui destinatari</li>
+<li>Per i trattamenti basati sul consenso: informazioni sulle conseguenze del mancato consenso, revoca del consenso ed eliminazione, salvo le eccezioni previste dalla legge</li>
+<li>Opposizione a un trattamento contrario alla legge</li>
+<li>Riesame di decisioni basate esclusivamente sul trattamento automatizzato di dati personali che incidono sui vostri interessi</li>
+</ul>
+<p>Potete inoltre presentare una richiesta all’<a href="https://www.gov.br/anpd/pt-br">autorità brasiliana per la protezione dei dati ANPD</a>.</p>
+<p>Le richieste vengono accettate gratuitamente tramite il <a href="mailto:studio.molymorph+privacy@gmail.com">recapito per la privacy</a>. Rispondiamo entro i termini stabiliti dalla legge e dalle altre disposizioni applicabili. Se non è possibile adottare immediatamente la misura richiesta, spiegheremo i motivi e gli interventi possibili.</p>
+<h2>9. Sicurezza</h2>
+<p>Ci adoperiamo per proteggere le informazioni trattate, ad esempio limitandone l’accesso a quanto necessario. Questo sito è fornito tramite HTTPS. Anche adottando queste misure, non è sempre possibile impedire completamente le conseguenze legate alla sicurezza del dispositivo o dell’account o all’ambiente di rete.</p>
+<h2>10. Destinatari</h2>
+<p>L’App è destinata a persone di almeno 18 anni. Contattateci se avete dubbi sul trattamento delle informazioni di bambini o minorenni. Se viene riscontrato un problema, adotteremo le misure necessarie in base alle circostanze.</p>
+<h2>11. Sito che ospita questa informativa</h2>
+<p>Questo sito è pubblicato tramite GitHub Pages. GitHub registra e conserva gli indirizzi IP dei visitatori, tra l’altro per garantire la sicurezza del sito. Non abbiamo installato su questo sito strumenti di analisi propri o tag pubblicitari.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Informativa sulla privacy di GitHub</a></p>
+<h2>12. Modifiche all’informativa</h2>
+<p>Possiamo aggiornare questa informativa, ad esempio in seguito a modifiche delle funzioni dell’App o dei requisiti di legge. La versione modificata e la data di aggiornamento saranno pubblicate su questa pagina. Quando richiesto dalla legge, forniremo ulteriori comunicazioni o richiederemo il consenso.</p>
+<div class="policy-contact" id="it-IT-contact">
+<h2>Gestore e contatti</h2>
+<p>Gestore: Molymorph (attività gestita da una persona fisica in Giappone)</p>
+<p>Contatti: <a href="mailto:studio.molymorph+privacy@gmail.com">studio.molymorph+privacy@gmail.com</a></p>
+</div>
+</section>
 </main>
-<footer class="site-footer"><span>© Molymorph</span></footer>
-<script src="/privacy/document.js"></script>
+<footer class="site-footer"><span>Molymorph</span></footer>
+<script src="/privacy/document.js?v=20261031-r04"></script>
 </body>
 </html>
